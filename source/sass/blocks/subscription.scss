@@ -1,0 +1,88 @@
+.subscription {
+  display: grid;
+  grid-template-rows: min-content min-content auto min-content;
+  min-height: 448px;
+  padding: 68px 17px;
+  background-color: $color-default-white;
+  border: 7px solid transparent;
+
+  // transition: all $trans-default;
+
+  @include hover-focus {
+    // border: 7px solid transparent;
+    border-image: $border-gradient;
+    border-image-slice: 1;
+  }
+}
+
+.subscription__title {
+  margin: 0 0 22px;
+  padding: 0;
+
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 29px;
+}
+
+.subscription__options {
+  display: block;
+  margin-bottom: 59px;
+
+  font-size: 16px;
+  line-height: 24px;
+  color: $color-chambray;
+}
+
+.subscription__button {
+  max-width: 206px;
+  padding-top: 27px;
+  padding-bottom: 28px;
+  justify-self: center;
+
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+
+  outline: none;
+
+  @include hover-focus {
+    color: $color-default-white;
+
+    background-image: $button-gradient;
+    border: none;
+  }
+}
+
+.subscription__price-wrapper {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.subscription__shadow {
+  opacity: 0.48;
+
+  font-weight: 700;
+  font-size: 100px;
+  line-height: 150px;
+  color: $color-whisper;
+}
+
+.subscription__price {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: baseline;
+
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 90px;
+  color: $color-egyptian-blue;
+}
+
+.subscription__price svg {
+  margin-left: 14px;
+}

@@ -1,0 +1,171 @@
+.intro {
+  display: flex;
+  color: $color-default-white;
+
+  @include vp-1199 {
+    justify-content: center;
+  }
+}
+
+.intro__text-content {
+  position: relative;
+  display: grid;
+  grid-template-columns: min-content min-content;
+  grid-template-rows: repeat(3, min-content);
+  column-gap: 18px;
+  margin-right: 64px;
+  padding-top: 81px;
+  overflow: hidden;
+
+  @include vp-1199 {
+    grid-template-columns: auto min-content;
+    flex-shrink: 1;
+    margin-right: 30px;
+    padding-top: 50px;
+  }
+
+  @include vp-767 {
+    column-gap: 0;
+    margin-right: 0;
+    margin-left: 6px;
+    padding-top: 48px;
+  }
+}
+
+.intro__text {
+  grid-column: 2 / -1;
+  grid-row: 1 / 2;
+  justify-self: flex-end;
+  display: block;
+  margin-right: 51px;
+  margin-bottom: 15px;
+
+  font-family: $ff-alumni;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 58px;
+  letter-spacing: 0.03em;
+  text-transform: lowercase;
+
+  @include vp-1199 {
+    margin-right: 4px;
+    margin-bottom: 7px;
+
+    font-size: 34px;
+    line-height: 41px;
+  }
+
+  @include vp-767 {
+    position: relative;
+    right: 8px;
+    margin-bottom: 14px;
+
+    font-size: 28px;
+    line-height: 34px;
+  }
+}
+
+.intro__heading {
+  grid-column: 2 / -1;
+  grid-row: 2 / 3;
+  margin: 0 0 48px;
+  padding: 0;
+
+  font-family: $ff-alumni;
+  font-weight: 600;
+  font-size: 92px;
+  line-height: 110px;
+  letter-spacing: 0.05em;
+  text-align: right;
+  -webkit-text-stroke-width: 4px;
+  -webkit-text-stroke-color: $color-default-white;
+
+  @include vp-1199 {
+    margin-left: 8px;
+    margin-bottom: 35px;
+
+    font-size: 72px;
+    line-height: 86px;
+  }
+
+  @include vp-767 {
+    position: relative;
+    right: 8px;
+    margin-left: 0;
+    margin-bottom: 22px;
+  }
+}
+
+.intro__services-list {
+  grid-column: 1 / 2;
+  grid-row: 1 / -1;
+  align-self: center;
+  margin: 47px 0 0 0;
+  padding: 0;
+
+  list-style: none;
+
+  font-size: 14px;
+  line-height: 21px;
+  text-align: right;
+
+  @include vp-1199 {
+    margin-top: 18px;
+  }
+
+  @include vp-767 {
+    margin-top: 10px;
+  }
+}
+
+.intro__btn {
+  grid-column: 2 / -1;
+  grid-row: 3 / -1;
+  justify-self: flex-end;
+  padding: 20px 55px;
+
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+
+  @include vp-1199 {
+    padding: 20px 30px;
+  }
+
+  @include vp-767 {
+    position: relative;
+    right: 6px;
+    grid-column: 1 / -1;
+    width: 100%;
+    max-width: 292px;
+    justify-content: center;
+    padding: 20px 30px;
+  }
+}
+
+.intro__image {
+  flex-shrink: 0;
+  margin-top: -29px;
+
+  @include vp-1199 {
+    margin-top: 0;
+  }
+}
+
+.intro img {
+  width: 500px;
+  height: 556px;
+
+  object-fit: contain;
+
+  @include vp-1199 {
+    width: 324px;
+    height: 390px;
+  }
+
+  @include vp-767 {
+    display: none;
+  }
+}

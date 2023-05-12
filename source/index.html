@@ -21,61 +21,73 @@
       <div class="header__wrapper">
         <div class="container">
           <header class="header">
-            <svg width="122" height="44">
-              <use xlink:href="img/sprite.svg#logo"></use>
-            </svg>
+            <a class="header__logo" href="#">
+              <svg width="122" height="44">
+                <use xlink:href="img/sprite.svg#logo"></use>
+              </svg>
+            </a>
             <a class="header__tel" href="tel:+88005555555">8-800-555-55-55</a>
           </header>
+        </div>
+        <div class="container container--intro">
           <section class="intro">
             <div class="intro__text-content">
               <span class="intro__text">Омск</span>
-              <h1 class="intro__heading">ФИТНЕС ЦЕНТР</h1>
+              <h1 class="intro__heading">Фитнес центр</h1>
               <ul class="intro__services-list">
-                <li class="intro__services-item">Тренажёрный зал</li>
-                <li class="intro__services-item">Групповые занятия</li>
+                <li class="intro__services-item">Тренажёрный&nbsp;зал</li>
+                <li class="intro__services-item">Групповые&nbsp;занятия</li>
                 <li class="intro__services-item">Кардио-зона</li>
               </ul>
-              <a class="btn" href="#subscriptions">Купить абонемент</a>
+              <a class="btn intro__btn" href="#subscriptions">Купить абонемент</a>
             </div>
-            <picture>
-              <source type="image/webp" media="(min-width: 1200px)"
-                srcset="img/intro-desktop.webp 1x, img/intro-desktop@2x.webp 2x">
-              <source type="image/webp" srcset="img/intro-tablet.webp 1x, img/intro-tablet@2x.webp 2x">
-              <source media="(min-width: 1200px)" srcset="img/intro-desktop.jpg 1x, img/intro-desktop@2x.jpg 2x">
-              <img src="img/intro-tablet.jpg" srcset="intro-tablet@2x.jpg 2x" width="324" height="390" loading="lazy"
-                alt="Мужчина спортивного телосложения в футболке с логотипом супермена.">
-            </picture>
+            <div class="intro__image">
+              <picture>
+                <source type="image/webp" media="(min-width: 1200px)"
+                  srcset="img/intro-desktop.webp 1x, img/intro-desktop@2x.webp 2x">
+                <source type="image/webp" srcset="img/intro-tablet.webp 1x, img/intro-tablet@2x.webp 2x">
+                <source media="(min-width: 1200px)" srcset="img/intro-desktop.jpg 1x, img/intro-desktop@2x.jpg 2x">
+                <img src="img/intro-tablet.jpg" srcset="intro-tablet@2x.jpg 2x" width="324" height="390" loading="lazy"
+                  alt="Мужчина спортивного телосложения в футболке с логотипом супермена.">
+              </picture>
+            </div>
           </section>
         </div>
       </div>
       <main>
-        <div class="container">
+        <div class="container container--about-company">
           <section class="about-company">
             <div class="about-company__text-content">
               <h2 class="about-company__heading">Тренажерный зал</h2>
               <p class="about-company__subtitle">Просторный зал площадью 900 кв/м</p>
-              <p>
-                Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья. Тренажерный зал
-                оснащен всем необходимым современным оборудованием для всех спортсменов.
-              </p>
-              <p>
-                В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажерами. Также в фитнес центре есть несколько
-                оборудованных залов для различных видов групповых занятий.
-              </p>
+              <div class="about-company__text">
+                <p>
+                  Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья. Тренажерный зал
+                  оснащен всем необходимым современным оборудованием для всех спортсменов.
+                </p>
+              </div>
+              <div class="about-company__text about-company__text--hidden">
+                <p>
+                  В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажерами. Также в фитнес центре есть несколько
+                  оборудованных залов для различных видов групповых занятий.
+                </p>
+              </div>
             </div>
-            <picture>
-              <source type="image/webp" media="(min-width: 1200px)"
-                srcset="img/about-company-desktop.webp 1x, img/about-company-desktop@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 768px)"
-                srcset="img/about-company-tablet.webp 1x, img/about-company-tablet@2x.webp 2x">
-              <source type="image/webp" srcset="img/about-company-mobile.webp 1x, img/about-company-mobile@2x.webp 2x">
-              <source media="(min-width: 1200px)" srcset="img/about-company-desktop.jpg 1x, img/about-company-desktop@2x.jpg 2x">
-              <source media="(min-width: 768px)" srcset="img/about-company-tablet.jpg 1x, img/about-company-tablet@2x.jpg 2x">
-              <img src="img/about-company-mobile.jpg" srcset="about-company-mobile@2x.jpg 2x" width="320" height="313" loading="lazy"
-                alt="г. Санкт Петербург, ул. Большая Конюшенная, 19/8.">
-            </picture>
+            <div class="about-company__image">
+              <picture>
+                <source type="image/webp" media="(min-width: 1200px)"
+                  srcset="img/about-company-desktop.webp 1x, img/about-company-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/about-company-tablet.webp 1x, img/about-company-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/about-company-mobile.webp 1x, img/about-company-mobile@2x.webp 2x">
+                <source media="(min-width: 1200px)" srcset="img/about-company-desktop.jpg 1x, img/about-company-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/about-company-tablet.jpg 1x, img/about-company-tablet@2x.jpg 2x">
+                <img src="img/about-company-mobile.jpg" srcset="about-company-mobile@2x.jpg 2x" width="320" height="313" loading="lazy"
+                  alt="Тренажерный зал.">
+              </picture>
+            </div>
             <div class="about-company__video">
-              <a class="video__link" href="https://www.youtube.com/watch?v=9TZXsZItgdw">
+              <a class="about-company__video-link" href="https://www.youtube.com/watch?v=9TZXsZItgdw">
                 <picture>
                   <source type="image/webp" media="(min-width: 1200px)"
                     srcset="img/video-preview-desktop.webp 1x, img/video-preview-desktop@2x.webp 2x">
@@ -84,17 +96,327 @@
                   <source srcset="img/video-preview-mobile.webp 1x, img/video-preview-mobile@2x.webp 2x" type="image/webp">
                   <source media="(min-width: 1200px)" srcset="img/video-preview-desktop.jpg 1x, img/video-preview-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="img/video-preview-tablet.jpg 1x, img/video-preview-tablet@2x.jpg 2x">
-                  <img class="video__media" src="img/video-preview-mobile.jpg" width="320" height="167"
-                    srcset="img/video-preview-mobile@2x.jpg 2x" alt="Тренажерный зал.">
+                  <img src="img/video-preview-mobile.jpg" width="320" height="167" srcset="img/video-preview-mobile@2x.jpg 2x"
+                    alt="Тренажерный зал.">
                 </picture>
               </a>
+              <button class="btn about-company__video-button" type="button" aria-label="Смотреть видео."></button>
             </div>
           </section>
         </div>
+        <section class="subscriptions" id="subscriptions">
+          <div class="container">
+            <h2 class="subscriptions__heading">Абонементы</h2>
+            <div class="subscriptions__tabs tabs" data-tabs="parent">
+              <div class="subscriptions__tabs-controls tabs__controls" data-tabs="controls">
+                <button class="subscriptions__control tabs__control" type="button" data-tabs="control">1 месяц</button>
+                <button class="subscriptions__control tabs__control" type="button" data-tabs="control">6 месяцев</button>
+                <button class="subscriptions__control tabs__control" type="button" data-tabs="control">12 месяцев</button>
+              </div>
+              <div class="subscriptions__tabs-list tabs__content" data-tabs="content">
+                <ul class="subscriptions__tabs-item tabs__element" data-tabs="element" is-active>
+                  <li class="subscriptions__card subscription" tabindex="0">
+                    <h3 class="subscription__title">С тренером</h3>
+                    <span class="subscription__options">12 занятий</span>
+                    <div class="subscription__price-wrapper">
+                      <span class="subscription__shadow">5000</span>
+                      <p class="subscription__price">
+                        5000
+                        <svg width="30" height="42">
+                          <use xlink:href="img/sprite.svg#price-icon"></use>
+                        </svg>
+                      </p>
+                    </div>
+                    <a class="subscription__button btn btn--border-black" href="#">Купить абонемент</a>
+                  </li>
+                  <li class="subscriptions__card subscription" tabindex="0">
+                    <h3 class="subscription__title">Дневной</h3>
+                    <span class="subscription__options">с 8:00 до 17:00</span>
+                    <div class="subscription__price-wrapper">
+                      <span class="subscription__shadow">1700</span>
+                      <p class="subscription__price">
+                        1700
+                        <svg width="30" height="42">
+                          <use xlink:href="img/sprite.svg#price-icon"></use>
+                        </svg>
+                      </p>
+                    </div>
+                    <a class="subscription__button btn btn--border-black" href="#">Купить абонемент</a>
+                  </li>
+                  <li class="subscriptions__card subscription" tabindex="0">
+                    <h3 class="subscription__title">Полный день</h3>
+                    <span class="subscription__options">с 8:00 до 22:00</span>
+                    <div class="subscription__price-wrapper">
+                      <span class="subscription__shadow">2700</span>
+                      <p class="subscription__price">
+                        2700
+                        <svg width="30" height="42">
+                          <use xlink:href="img/sprite.svg#price-icon"></use>
+                        </svg>
+                      </p>
+                    </div>
+                    <a class="subscription__button btn btn--border-black" href="#">Купить абонемент</a>
+                  </li>
+                </ul>
+                <ul class="subscriptions__tabs-item tabs__element" data-tabs="element">
+                  <li class="subscriptions__card subscription" tabindex="0">
+                    <h3 class="subscription__title">С тренером</h3>
+                    <span class="subscription__options">12 занятий</span>
+                    <div class="subscription__price-wrapper">
+                      <span class="subscription__shadow">25000</span>
+                      <p class="subscription__price">
+                        25000
+                        <svg width="30" height="42">
+                          <use xlink:href="img/sprite.svg#price-icon"></use>
+                        </svg>
+                      </p>
+                    </div>
+                    <a class="subscription__button btn btn--border-black" href="#">Купить абонемент</a>
+                  </li>
+                  <li class="subscriptions__card subscription" tabindex="0">
+                    <h3 class="subscription__title">Дневной</h3>
+                    <span class="subscription__options">с 8:00 до 17:00</span>
+                    <div class="subscription__price-wrapper">
+                      <span class="subscription__shadow">8500</span>
+                      <p class="subscription__price">
+                        8500
+                        <svg width="30" height="42">
+                          <use xlink:href="img/sprite.svg#price-icon"></use>
+                        </svg>
+                      </p>
+                    </div>
+                    <a class="subscription__button btn btn--border-black" href="#">Купить абонемент</a>
+                  </li>
+                  <li class="subscriptions__card subscription" tabindex="0">
+                    <h3 class="subscription__title">Полный день</h3>
+                    <span class="subscription__options">с 8:00 до 22:00</span>
+                    <div class="subscription__price-wrapper">
+                      <span class="subscription__shadow">13500</span>
+                      <p class="subscription__price">
+                        13500
+                        <svg width="30" height="42">
+                          <use xlink:href="img/sprite.svg#price-icon"></use>
+                        </svg>
+                      </p>
+                    </div>
+                    <a class="subscription__button btn btn--border-black" href="#">Купить абонемент</a>
+                  </li>
+                </ul>
+                <ul class="subscriptions__tabs-item tabs__element" data-tabs="element">
+                  <li class="subscriptions__card subscription" tabindex="0">
+                    <h3 class="subscription__title">С тренером</h3>
+                    <span class="subscription__options">12 занятий</span>
+                    <div class="subscription__price-wrapper">
+                      <span class="subscription__shadow">50000</span>
+                      <p class="subscription__price">
+                        50000
+                        <svg width="30" height="42">
+                          <use xlink:href="img/sprite.svg#price-icon"></use>
+                        </svg>
+                      </p>
+                    </div>
+                    <a class="subscription__button btn btn--border-black" href="#">Купить абонемент</a>
+                  </li>
+                  <li class="subscriptions__card subscription" tabindex="0">
+                    <h3 class="subscription__title">Дневной</h3>
+                    <span class="subscription__options">с 8:00 до 17:00</span>
+                    <div class="subscription__price-wrapper">
+                      <span class="subscription__shadow">17000</span>
+                      <p class="subscription__price">
+                        17000
+                        <svg width="30" height="42">
+                          <use xlink:href="img/sprite.svg#price-icon"></use>
+                        </svg>
+                      </p>
+                    </div>
+                    <a class="subscription__button btn btn--border-black" href="#">Купить абонемент</a>
+                  </li>
+                  <li class="subscriptions__card subscription" tabindex="0">
+                    <h3 class="subscription__title">Полный день</h3>
+                    <span class="subscription__options">с 8:00 до 22:00</span>
+                    <div class="subscription__price-wrapper">
+                      <span class="subscription__shadow">27000</span>
+                      <p class="subscription__price">
+                        27000
+                        <svg width="30" height="42">
+                          <use xlink:href="img/sprite.svg#price-icon"></use>
+                        </svg>
+                      </p>
+                    </div>
+                    <a class="subscription__button btn btn--border-black" href="#">Купить абонемент</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="subscriptions__bg-decor">
+            <picture>
+              <source type="image/webp" media="(min-width: 1200px)"
+                srcset="img/subscriptions-desktop.webp 1x, img/subscriptions-desktop@2x.webp 2x">
+              <source srcset="img/subscriptions-tablet.webp 1x, img/subscriptions-tablet@2x.webp 2x" type="image/webp">
+              <source media="(min-width: 1200px)" srcset="img/subscriptions-desktop.png 1x, img/subscriptions-desktop@2x.png 2x">
+              <img class="video__media" src="img/subscriptions-tablet.png" width="289" height="345"
+                srcset="img/subscriptions-tablet@2x.png 2x" alt="Блины.">
+            </picture>
+          </div>
+        </section>
+        <section class="reviews">
+          <div class="container">
+            <h2 class="reviews__heading">Отзывы</h2>
+            <div class="swiper">
+              <button class="swiper-button-prev" type="button">
+                <span class="visually-hidden">Предыдущий слайд</span>
+                <svg width="16" height="32">
+                  <use xlink:href="img/sprite.svg#arrow-slider-left"></use>
+                </svg>
+              </button>
+              <button class="swiper-button-next">
+                <span class="visually-hidden">Следующий слайд</span>
+                <svg width="16" height="32">
+                  <use xlink:href="img/sprite.svg#arrow-slider-right"></use>
+                </svg>
+              </button>
+              <ul class="reviews__list swiper-wrapper">
+                <li class="swiper-slide">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 768px)"
+                      srcset="img/review-desktop-1.webp 1x, img/review-desktop-1@2x.webp 2x">
+                    <source srcset="img/review-mobile-1.webp 1x, img/review-mobile-1@2x.webp 2x" type="image/webp">
+                    <source media="(min-width: 768px)" srcset="img/review-desktop-1.jpg 1x, img/review-desktop-1@2x.jpg 2x">
+                    <img src="img/review-mobile-1.jpg" width="68" height="68"
+                      srcset="img/review-mobile-1@2x.jpg 2x" alt="Фото Анны Орловой.">
+                  </picture>
+                  <div class="reviews__content">
+                    <span class="reviews__author">Анна Орлова</span>
+                    <p class="reviews__text">«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+                  </div>
+                </li>
+                <li class="swiper-slide">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 768px)"
+                      srcset="img/review-desktop-1.webp 1x, img/review-desktop-1@2x.webp 2x">
+                    <source srcset="img/review-mobile-1.webp 1x, img/review-mobile-1@2x.webp 2x" type="image/webp">
+                    <source media="(min-width: 768px)" srcset="img/review-desktop-1.jpg 1x, img/review-desktop-1@2x.jpg 2x">
+                    <img src="img/review-mobile-1.jpg" width="68" height="68"
+                      srcset="img/review-mobile-1@2x.jpg 2x" alt="Фото Анны Орловой.">
+                  </picture>
+                  <div class="reviews__content">
+                    <span class="reviews__author">Анна Орлова</span>
+                    <p class="reviews__text">«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+                  </div>
+                </li>
+                <li class="swiper-slide">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 768px)"
+                      srcset="img/review-desktop-1.webp 1x, img/review-desktop-1@2x.webp 2x">
+                    <source srcset="img/review-mobile-1.webp 1x, img/review-mobile-1@2x.webp 2x" type="image/webp">
+                    <source media="(min-width: 768px)" srcset="img/review-desktop-1.jpg 1x, img/review-desktop-1@2x.jpg 2x">
+                    <img src="img/review-mobile-1.jpg" width="68" height="68"
+                      srcset="img/review-mobile-1@2x.jpg 2x" alt="Фото Анны Орловой.">
+                  </picture>
+                  <div class="reviews__content">
+                    <span class="reviews__author">Анна Орлова</span>
+                    <p class="reviews__text">«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section class="contacts">
+          <div class="feedback">
+            <h2 class="feedback__heading">Бесплатное занятие</h2>
+            <form class="feedback__form" action="https://echo.htmlacademy.ru/" method="post">
+              <div class="feedback__input feedback__input-name">
+                <input type="text" name="user-name" id="feedback-name" placeholder="Имя" aria-label="Имя" required>
+              </div>
+              <div class="feedback__input feedback__form-tel">
+                <input type="tel" name="user-tel" id="feedback-tel" placeholder="Телефон" aria-label="Телефон" required>
+              </div>
+              <button class="btn feedback__button" type="submit">отправить</button>
+            </form>
+          </div>
+          <div class="contacts__wrapper">
+            <h2 class="contacts__heading">Контакты</h2>
+            <div class="contacts__address">
+              <p>
+                <span class="contacts__subtitle">Адрес:</span>
+                <span>г. Омск, ул. 60 лет Октября, 7</span>
+              </p>
+              <p>
+                <span class="contacts__subtitle">График работы:</span>
+                <span>Пн-Вс: с 8:00 до 22:00</span>
+              </p>
+            </div>
+            <div class="contacts__connection">
+              <p>
+                <span class="contacts__subtitle">Телефон:</span>
+                <a class="contacts__link contacts__link--tel" href="tel:+88005555555">8-800-555-55-55</a>
+              </p>
+              <p>
+                <span class="contacts__subtitle">Email:</span>
+                <a class="contacts__link contacts__link--email" href="mailto:omsk@supergym.ru">omsk@supergym.ru</a>
+              </p>
+            </div>
+          </div>
+        </section>
 
       </main>
-      <footer>
-        <div class="container"></div>
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__wrapper">
+            <a class="footer__logo" href="#">
+              <svg width="116" height="40">
+                <use xlink:href="img/sprite.svg#logo"></use>
+              </svg>
+            </a>
+            <nav class="nav">
+              <ul class="nav__list">
+                <li class="nav__item">
+                  <a class="nav__link" href="#intro">Услуги</a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link" href="#subscriptions">Абонементы</a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link" href="#promotions">Акции</a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link" href="#trainer">Тренеры</a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link" href="#contacts">Расписание</a>
+                </li>
+              </ul>
+            </nav>
+            <ul class="social">
+              <li class="social__item">
+                <a class="social__link" href="#">
+                  <span class="visually-hidden">Ссылка на профиль в социальной сети Вконтакте.</span>
+                  <svg width="25" height="25">
+                    <use xlink:href="img/sprite.svg#vk"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="#">
+                  <span class="visually-hidden">Ссылка на профиль в социальной сети Одноклассники.</span>
+                  <svg width="25" height="25">
+                    <use xlink:href="img/sprite.svg#ok"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="#">
+                  <span class="visually-hidden">Ссылка на профиль в социальной сети Reddit.</span>
+                  <svg width="25" height="25">
+                    <use xlink:href="img/sprite.svg#reddit"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </footer>
     </div>
 
