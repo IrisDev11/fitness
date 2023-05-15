@@ -1,7 +1,15 @@
 .nav__list {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(5, min-content);
+  column-gap: 40px;
   margin: 0;
   padding: 0;
 
   list-style: none;
+}
+
+.nav__link {
+  font-size: 14px;
+  line-height: 16px;
+  color: $color-default-white;
 }

@@ -1,0 +1,127 @@
+.promo {
+  display: flex;
+}
+
+.promo__content {
+  max-width: 500px;
+  padding: 65px 79px 0 76px;
+
+  color: $color-default-white;
+
+  background-color: $color-red;
+}
+
+.promo__top-wrapper {
+  display: flex;
+  margin-bottom: 4px;
+}
+
+.promo__heading {
+  margin: 20px 0 0 14px;
+  padding: 0;
+
+  font-family: $ff-alumni;
+  font-weight: 600;
+  font-size: 82px;
+  line-height: 79px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  @include vp-1199 {
+    font-size: 48px;
+    line-height: 46px;
+  }
+}
+
+.promo__info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 15px 0 0;
+}
+
+.promo__info dt {
+  margin-bottom: 6px;
+
+  font-size: 18px;
+  line-height: 27px;
+
+  @include vp-1199 {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+
+.promo__info dd {
+  display: flex;
+  align-items: flex-start;
+  margin: 0 0 17px;
+  padding-top: 2px;
+
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 40px;
+
+  border-top: 1px solid $color-default-white;
+
+  @include vp-1199 {
+    font-size: 24px;
+    line-height: 36px;
+  }
+}
+
+.promo__info .promo__month {
+  display: block;
+  padding-left: 7px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+
+  @include vp-1199 {
+    font-size: 10px;
+    line-height: 15px;
+  }
+}
+
+.promo__content p {
+  margin: 0 0 45px;
+  padding: 0 0 0 2px;
+
+  font-size: 18px;
+  line-height: 27px;
+
+  @include vp-1199 {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+
+.promo__image img {
+  width: 660px;
+  height: 500px;
+
+  object-fit: cover;
+
+  @include vp-1199 {
+    width: 386px;
+    height: 292px;
+  }
+}
+
+.promo__button {
+  width: 100%;
+  padding: 25px;
+
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+
+  @include vp-1199 {
+    padding: 16px;
+
+    font-size: 10px;
+    line-height: 12px;
+  }
+}

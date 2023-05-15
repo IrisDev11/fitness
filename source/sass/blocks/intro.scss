@@ -1,9 +1,12 @@
 .intro {
   display: flex;
+  padding-left: 20px;
+
   color: $color-default-white;
 
   @include vp-1199 {
     justify-content: center;
+    padding-left: 0;
   }
 }
 
@@ -79,6 +82,7 @@
   text-align: right;
   -webkit-text-stroke-width: 4px;
   -webkit-text-stroke-color: $color-default-white;
+  text-transform: uppercase;
 
   @include vp-1199 {
     margin-left: 8px;
@@ -86,6 +90,7 @@
 
     font-size: 72px;
     line-height: 86px;
+    text-transform: none;
   }
 
   @include vp-767 {

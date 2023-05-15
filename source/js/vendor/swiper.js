@@ -18,7 +18,6 @@ const swiper = () => {
       ? define(factory)
       : ((global = typeof globalThis !== 'undefined' ? globalThis : global || self), (global.Swiper = factory()));
   })(this, function () {
-
     'use strict';
 
     /**
