@@ -10,13 +10,13 @@
 
   @include vp-1199 {
     padding-top: 68px;
-    padding-bottom: 70px;
+    padding-bottom: 50px;
   }
 }
 
 .subscriptions__heading {
   position: relative;
-  left: -6px;
+  left: -3px;
   margin: 0 0 17px;
   padding: 0;
 
@@ -27,6 +27,7 @@
   letter-spacing: 0.03em;
 
   @include vp-1199 {
+    left: -6px;
     margin-bottom: 20px;
 
     font-size: 42px;
@@ -34,6 +35,8 @@
   }
 
   @include vp-767 {
+    left: 0;
+
     font-size: 32px;
     line-height: 38px;
   }
@@ -43,6 +46,11 @@
   @include vp-1199 {
     margin-left: 118px;
     margin-right: 118px;
+  }
+
+  @include vp-767 {
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 

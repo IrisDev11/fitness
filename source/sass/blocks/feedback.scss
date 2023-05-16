@@ -3,6 +3,16 @@
   padding-bottom: 70px;
 
   color: $color-default-white;
+
+  @include vp-1199 {
+    padding: 56px 133px;
+
+    background-color: $color-default-black;
+  }
+
+  @include vp-767 {
+    padding: 70px 15px;
+  }
 }
 
 .feedback__heading {

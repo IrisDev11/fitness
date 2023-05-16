@@ -1,6 +1,16 @@
-.connection {
-  background-image: linear-gradient(to right, $color-default-black 50%, $color-default-white 50%, $color-default-white 100%);
-  border-top: 1px solid $color-lightchambray;
+.contacts {
+  justify-self: center;
+  max-width: 500px;
+  padding-top: 56px;
+  padding-bottom: 70px;
+
+  @include vp-1199 {
+    padding: 56px 133px;
+  }
+
+  @include vp-767 {
+    padding: 70px 15px;
+  }
 }
 
 .contacts__heading {
@@ -12,34 +22,42 @@
   font-size: 54px;
   line-height: 65px;
   letter-spacing: 0.03em;
-}
 
-.connection__wrapper {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
-.contacts {
-  justify-self: center;
-  max-width: 500px;
-  padding-top: 56px;
-  padding-bottom: 70px;
+  @include vp-767 {
+    font-size: 32px;
+    line-height: 38px;
+  }
 }
 
 .contacts__wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
+
+  @include vp-767 {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .contacts__wrapper dl {
   font-size: 14px;
   line-height: 21px;
+
+  @include vp-767 {
+    font-size: 18px;
+    line-height: 27px;
+  }
 }
 
 .contacts__wrapper dt {
   font-weight: 700;
   font-size: 16px;
   line-height: 24px;
+
+  @include vp-767 {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .contacts__wrapper dd {
@@ -49,8 +67,17 @@
 .contacts__address {
   min-width: 234px;
   border-right: 1px solid $color-lightchambray;
+
+  @include vp-767 {
+    min-width: none;
+    border-right: none;
+  }
 }
 
 .contacts__connection {
   padding-left: 60px;
+
+  @include vp-767 {
+    padding-left: 0;
+  }
 }

@@ -1,4 +1,9 @@
 .coaches__heading {
+  position: relative;
+  left: 2px;
+  margin: 0 0 48px;
+  padding: 0;
+
   font-family: $ff-alumni;
   font-style: normal;
   font-weight: 600;
@@ -7,8 +12,12 @@
   letter-spacing: 0.03em;
 
   @include vp-1199 {
+    left: -2px;
+    margin-bottom: 31px;
+
     font-size: 42px;
     line-height: 50px;
+    text-align: center;
   }
 
   @include vp-767 {
@@ -19,6 +28,7 @@
 
 .coaches__wrapper {
   position: relative;
+  padding: 0 56px;
 }
 
 .coaches__list {
@@ -35,6 +45,14 @@
   color: $color-default-white;
 
   background-color: $color-blue-transparent;
+
+  @include vp-1199 {
+    width: 268px;
+  }
+
+  @include hover {
+    box-shadow: 0 0 35px $color-shadow;
+  }
 }
 
 .coaches__image {
@@ -49,25 +67,30 @@
   object-fit: cover;
 
   @include vp-1199 {
-    width: 268px;
-    height: 294px;
+    width: 100%;
+    height: auto;
   }
 
-  @include vp-767 {
-    width: 226px;
-    height: 274px;
-  }
+  // @include vp-767 {
+  //   width: 226px;
+  //   height: 274px;
+  // }
 }
 
 .coaches__image figcaption {
   position: absolute;
-  bottom: 30px;
+  bottom: 22px;
   left: 50%;
   transform: translateX(-50%);
 
   font-weight: 700;
   font-size: 18px;
   line-height: 27px;
+
+  @include vp-1199 {
+    bottom: 22px;
+    transform: translateX(-47%);
+  }
 }
 
 .coaches__info {
@@ -75,8 +98,10 @@
   top: 0;
   left: 0;
   display: none;
+  flex-direction: column;
+  width: 100%;
   height: 100%;
-  padding: 58px 55px;
+  padding: 52px 20px 52px 20px;
 
   background-color: $color-blue-transparent;
 
@@ -86,7 +111,7 @@
 }
 
 .coaches__item:hover .coaches__info {
-  display: block;
+  display: flex;
 }
 
 .coaches__item:hover figcaption {
@@ -94,18 +119,33 @@
 }
 
 .coaches__info h3 {
+  align-self: center;
   margin: 0;
   padding: 0;
 
   font-weight: 700;
   font-size: 18px;
   line-height: 27px;
+
+  @include vp-1199 {
+    position: relative;
+    left: -4px;
+  }
 }
 
 .coaches__info span {
+  display: block;
+  align-self: center;
+  margin-bottom: 37px;
+
   font-size: 16px;
-  line-height: 24px;
+  line-height: 16px;
   color: $color-lightblue;
+
+  @include vp-1199 {
+    position: relative;
+    left: -4px;
+  }
 }
 
 .coaches__info ul {
@@ -116,6 +156,29 @@
   line-height: 21px;
 
   list-style: none;
+}
+
+.coaches__info li {
+  position: relative;
+  margin: 0 0 13px 50px;
+  padding: 0;
+
+  font-size: 14px;
+  line-height: 21px;
+
+  list-style: none;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 7px;
+    left: -15px;
+    width: 6px;
+    height: 6px;
+
+    border-radius: 50%;
+    background-color: $color-default-white;
+  }
 }
 
 .coaches__toggle {
@@ -138,8 +201,25 @@
   &--next {
     right: -50px;
   }
+
+  @include vp-1199 {
+    top: 48%;
+
+    &--prev {
+      left: -4px;
+    }
+
+    &--next {
+      right: 3px;
+    }
+  }
 }
 
 .coaches__toggle svg {
-  fill: $color-lightgrey;
+  stroke: $color-lightgrey;
+}
+
+.coaches__toggle:hover svg,
+.coaches__toggle:focus svg {
+  stroke: $color-default-black;
 }

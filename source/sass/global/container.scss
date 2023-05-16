@@ -25,4 +25,10 @@
       padding: 0;
     }
   }
+
+  &--connection {
+    @include vp-1199 {
+      padding: 0;
+    }
+  }
 }

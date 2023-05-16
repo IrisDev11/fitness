@@ -6,6 +6,7 @@
 $color-default-black:               #102654;
 $color-default-white:               #ffffff;
 $color-transparent:                 rgba(16, 38, 84, 0.5);
+$color-shadow:                      rgba(42, 59, 99, 0.17);
 
 // Project palette
 // для нейминга цветов используем https://www.htmlcsscolor.com/hex/334482
@@ -14,6 +15,7 @@ $color-black:                 #030a1a;
 $color-blue:                  #1c3374;
 $color-lightblue:             #b6bdcc;
 $color-egyptian-blue:         #103aae;
+$color-blue-300:              #2e35ac;
 $color-chambray:              #495a7d;
 $color-lightchambray:         #74819c;
 $color-red:                   #ed0233;
@@ -25,6 +27,7 @@ $color-grey-transparent:      rgba(120, 120, 120, 0.2);
 $color-blue-transparent:      rgba(16, 38, 84, 0.89);
 
 // Gradient
+$text-gradient:                     linear-gradient(127.61deg, #d10f42 0%, #0041ca 45.58%);
 $border-gradient:                   linear-gradient(148.82deg, #d10f42 0.85%, #00359f 100%);
 $button-gradient:                   linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
 $conic-gradient:                    conic-gradient(from 150.87deg at 16.03% 39.06%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);

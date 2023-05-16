@@ -5,7 +5,6 @@ const initSliderCoaches = () => {
       observer: true,
       slidesPerView: 4,
       loop: true,
-      spaceBetween: 40,
       speed: 1e3,
       navigation: {
         nextEl: '.coaches__toggle--next',
@@ -17,9 +16,11 @@ const initSliderCoaches = () => {
         },
         768: {
           slidesPerView: 2,
+          spaceBetween: 30,
         },
         1200: {
           slidesPerView: 4,
+          spaceBetween: 40,
         },
       },
     });

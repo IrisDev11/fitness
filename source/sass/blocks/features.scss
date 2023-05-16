@@ -1,0 +1,136 @@
+.features {
+  padding-top: 97px;
+  padding-bottom: 140px;
+  background-color: $color-grey;
+}
+
+.features__heading {
+  margin: 0 0 55px;
+  padding: 0;
+
+  font-family: $ff-alumni;
+  font-weight: 600;
+  font-size: 54px;
+  line-height: 65px;
+  letter-spacing: 0.03em;
+  text-align: center;
+
+  @include vp-1199 {
+    font-size: 42px;
+    line-height: 50px;
+  }
+
+  @include vp-767 {
+    font-size: 32px;
+    line-height: 38px;
+  }
+}
+
+.features__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  // &::after {
+  //   content
+  // }
+
+  @include vp-1199 {
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: repeat(3, auto);
+  }
+
+  @include vp-767 {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.features__subtitle {
+  margin: 0;
+  padding: 0;
+
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 33px;
+
+  @include vp-1199 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.features__text {
+  margin: 0;
+  padding: 0;
+
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.features__item {
+  display: grid;
+  grid-template-columns: min-content auto;
+  grid-template-rows: min-content min-content;
+
+  &--accent {
+    grid-column: 2 / 3;
+    grid-row: 1 / -1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+    color: $color-default-white;
+
+    background-color: $color-default-black;
+
+    @include vp-1199 {
+      grid-column: 1 / -1;
+      grid-row: 2 / 3;
+    }
+  }
+
+  @include vp-767 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.features__num-block {
+  grid-column: 1 / 2;
+  grid-row: 1 / -1;
+}
+
+.features__num {
+  font-weight: 700;
+  font-size: 71px;
+  line-height: 106px;
+
+  background: $text-gradient;
+  background-clip: text;
+  color: transparent;
+}
+
+.features__num-accent {
+  font-weight: 700;
+  font-size: 71px;
+  line-height: 111px;
+}
+
+.features__sub-num {
+  font-size: 14px;
+  line-height: 21px;
+  color: $color-blue-300;
+}
+
+.features__sub-num-accent {
+  font-size: 26px;
+  line-height: 39px;
+}

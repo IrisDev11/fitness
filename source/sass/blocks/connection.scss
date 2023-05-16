@@ -1,0 +1,19 @@
+.connection {
+  background-image: linear-gradient(to right, $color-default-black 50%, $color-default-white 50%, $color-default-white 100%);
+  border-top: 1px solid $color-lightchambray;
+
+  @include vp-1199 {
+    background-image: none;
+    border: none;
+  }
+}
+
+.connection__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  @include vp-1199 {
+    display: flex;
+    flex-direction: column;
+  }
+}
