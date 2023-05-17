@@ -3,8 +3,8 @@
 }
 
 .tabs__controls {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(3, min-content);
   margin-bottom: 40px;
 
   @media screen and (max-width: 767px) {

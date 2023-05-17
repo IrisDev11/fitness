@@ -1,6 +1,7 @@
 .feedback {
   padding-top: 56px;
-  padding-bottom: 70px;
+  padding-bottom: 48px;
+  padding-right: 169px;
 
   color: $color-default-white;
 
@@ -16,7 +17,7 @@
 }
 
 .feedback__heading {
-  margin: 0 0 14px;
+  margin: 0 0 10px;
   padding: 0;
 
   font-family: $ff-alumni;
@@ -43,13 +44,13 @@
   grid-template-columns: 1fr 1fr;
   grid-template-rows: min-content min-content;
   column-gap: 30px;
-  row-gap: 30px;
+  row-gap: 28px;
   max-width: 414px;
 }
 
 .feedback__input input {
   width: 100%;
-  padding: 10px 0;
+  padding: 10px 0 7px;
 
   font-family: $ff-roboto;
   font-weight: 400;
@@ -70,7 +71,7 @@
 .feedback__button {
   grid-column: 1 / -1;
   grid-row: 2 / -1;
-  padding: 21px;
+  padding: 15px;
 
   font-weight: 700;
   font-size: 14px;

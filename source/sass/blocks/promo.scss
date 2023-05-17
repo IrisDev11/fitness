@@ -14,17 +14,15 @@
 
 .promo__content {
   display: grid;
-  grid-template-rows: 1fr min-content min-content;
-  max-width: 500px;
-  padding: 65px 79px 65px 76px;
+  grid-template-rows: min-content min-content min-content;
+  width: 43%;
+  padding: 65px 76px 65px 76px;
 
   color: $color-default-white;
 
   background-color: $color-red;
 
   @include vp-1199 {
-    width: 43%;
-    max-width: none;
     padding: 33px 45px 51px 43px;
   }
 
@@ -35,17 +33,17 @@
 
 .promo__top-wrapper {
   display: flex;
-  justify-content: space-around;
   margin-bottom: 4px;
 
   @include vp-1199 {
+    justify-content: space-around;
     margin-bottom: 0;
   }
 }
 
 .promo__heading {
   margin: 20px 29px 0 0;
-  padding: 0;
+  padding: 0 0 0 15px;
 
   font-family: $ff-alumni;
   font-weight: 600;
@@ -67,10 +65,15 @@
   flex-direction: column;
   align-items: flex-start;
   margin: 15px 0 0;
+  padding-left: 30px;
+
+  @include vp-1199 {
+    padding-left: 0;
+  }
 }
 
 .promo__info dt {
-  margin-bottom: 6px;
+  margin-bottom: 5px;
 
   font-size: 18px;
   line-height: 27px;
@@ -87,7 +90,7 @@
   display: flex;
   align-items: flex-start;
   margin: 0 0 17px;
-  padding-top: 2px;
+  padding-top: 3px;
 
   font-weight: 700;
   font-size: 40px;
@@ -97,6 +100,7 @@
 
   @include vp-1199 {
     margin-bottom: 7px;
+    padding-top: 2px;
 
     font-size: 24px;
     line-height: 24px;
@@ -120,6 +124,8 @@
 }
 
 .promo__content p {
+  position: relative;
+  left: 2px;
   margin: 0 0 45px;
   padding: 0;
 
@@ -128,7 +134,6 @@
 
   @include vp-1199 {
     margin-bottom: 30px;
-    padding-left: 2px;
 
     font-size: 12px;
     line-height: 18px;

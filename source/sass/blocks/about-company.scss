@@ -110,13 +110,14 @@
 
 .about-company__video {
   position: absolute;
-  bottom: 5px;
+  top: 408px;
   left: 50%;
   transform: translateX(-39.5%);
 
   background-color: $color-default-black;
 
   @include vp-1199 {
+    top: auto;
     bottom: 17px;
     transform: translateX(-50%);
   }

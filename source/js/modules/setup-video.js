@@ -23,7 +23,7 @@ const setupVideo = () => {
     video.appendChild(iframe);
   });
 
-  link.removeAttribute('href');
+  link.setAttribute('href', '#');
 };
 
 export {setupVideo};

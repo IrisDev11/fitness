@@ -28,8 +28,9 @@
 }
 
 .header__logo {
+  display: block;
+
   @include vp-1199 {
-    display: block;
     margin-top: 7px;
   }
 
@@ -49,7 +50,20 @@
   }
 }
 
+.header__contacts {
+  display: grid;
+  grid-template-rows: repeat(auto-fit, min-content);
+  // row-gap: 10px;
+
+  @include vp-1199 {
+    grid-template-columns: repeat(3, min-content);
+    column-gap: 20px;
+  }
+}
+
 .header__tel {
+  display: block;
+  margin-bottom: 10px;
   font-family: $ff-alumni;
   font-weight: 600;
   font-size: 26px;
@@ -58,7 +72,6 @@
   color: $color-default-white;
 
   @include vp-1199 {
-    display: block;
     margin-top: 4px;
 
     font-weight: 700;

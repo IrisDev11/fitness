@@ -1,11 +1,13 @@
 .features {
-  padding-top: 97px;
-  padding-bottom: 140px;
+  padding-top: 93px;
+  padding-bottom: 124px;
   background-color: $color-grey;
 }
 
 .features__heading {
-  margin: 0 0 55px;
+  position: relative;
+  left: 5px;
+  margin: 0 0 44px;
   padding: 0;
 
   font-family: $ff-alumni;
@@ -27,21 +29,48 @@
 }
 
 .features__list {
+  position: relative;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr min-content 1fr;
   grid-template-rows: 1fr 1fr;
-  margin: 0;
+  row-gap: 137px;
+  max-width: 1040px;
+  margin: 0 auto;
   padding: 0;
 
   list-style: none;
 
-  // &::after {
-  //   content
-  // }
+  &::after {
+    content: "";
+    position: absolute;
+    top: 49%;
+    width: 340px;
+    height: 2px;
+    background-color: rgba(209, 10, 66, 0.2);
+
+    @include vp-1199 {
+      display: none;
+    }
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 49%;
+    right: 0;
+    width: 340px;
+    height: 2px;
+    background-color: rgba(209, 10, 66, 0.2);
+
+    @include vp-1199 {
+      display: none;
+    }
+  }
 
   @include vp-1199 {
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(3, auto);
+    row-gap: 50px;
   }
 
   @include vp-767 {
@@ -51,6 +80,8 @@
 }
 
 .features__subtitle {
+  position: relative;
+  top: 4px;
   margin: 0;
   padding: 0;
 
@@ -71,30 +102,17 @@
   font-weight: 300;
   font-size: 16px;
   line-height: 22px;
+
+  &--accent {
+    font-weight: 400;
+  }
 }
 
 .features__item {
   display: grid;
   grid-template-columns: min-content auto;
   grid-template-rows: min-content min-content;
-
-  &--accent {
-    grid-column: 2 / 3;
-    grid-row: 1 / -1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    text-align: center;
-    color: $color-default-white;
-
-    background-color: $color-default-black;
-
-    @include vp-1199 {
-      grid-column: 1 / -1;
-      grid-row: 2 / 3;
-    }
-  }
+  column-gap: 30px;
 
   @include vp-767 {
     display: flex;
@@ -103,15 +121,46 @@
   }
 }
 
+.features__accent {
+  grid-column: 2 / 3;
+  grid-row: 1 / -1;
+  padding: 10px 42px 17px;
+
+  text-align: center;
+  color: $color-default-white;
+
+  @include vp-1199 {
+    grid-column: 1 / -1;
+    grid-row: 2 / 3;
+  }
+}
+
+.features__accent-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 240px;
+  min-height: 307px;
+  padding: 53px 24px;
+
+  background-color: $color-default-black;
+
+  @include vp-1199 {
+    width: 60%;
+    margin: 0 auto;
+  }
+}
+
 .features__num-block {
   grid-column: 1 / 2;
   grid-row: 1 / -1;
+  padding-left: 20px;
 }
 
 .features__num {
   font-weight: 700;
   font-size: 71px;
-  line-height: 106px;
+  line-height: 71px;
 
   background: $text-gradient;
   background-clip: text;
@@ -119,18 +168,25 @@
 }
 
 .features__num-accent {
+  display: block;
+  margin-bottom: 5px;
+
   font-weight: 700;
-  font-size: 71px;
-  line-height: 111px;
+  font-size: 74px;
+  line-height: 74px;
 }
 
 .features__sub-num {
+  position: relative;
+  top: -6px;
   font-size: 14px;
   line-height: 21px;
   color: $color-blue-300;
 }
 
 .features__sub-num-accent {
+  display: block;
+  margin-bottom: 32px;
   font-size: 26px;
   line-height: 39px;
 }

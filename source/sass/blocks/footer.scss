@@ -1,5 +1,5 @@
 .footer {
-  padding-top: 40px;
+  padding-top: 43px;
   padding-bottom: 40px;
   color: $color-default-white;
 
@@ -15,5 +15,26 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
+  }
+}
+
+.footer__logo {
+  display: block;
+  margin-top: 2px;
+  margin-right: 237px;
+}
+
+.footer__logo svg {
+  width: 88px;
+  height: 32px;
+
+  @include vp-1199 {
+    width: 82px;
+    height: 18px;
+  }
+
+  @include vp-767 {
+    width: 68px;
+    height: 15px;
   }
 }
