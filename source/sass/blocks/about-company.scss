@@ -14,7 +14,7 @@
 
   @include vp-767 {
     padding-top: 63px;
-    padding-bottom: 60px;
+    padding-bottom: 70px;
   }
 }
 
@@ -34,7 +34,7 @@
   }
 
   @include vp-767 {
-    margin-bottom: 25px;
+    margin-bottom: 33px;
     padding-left: 15px;
     padding-right: 15px;
 
@@ -62,7 +62,9 @@
   }
 
   @include vp-767 {
+    left: 0;
     margin-bottom: 5px;
+
     font-size: 32px;
     line-height: 38px;
   }
@@ -92,6 +94,10 @@
     margin: 0;
   }
 
+  @include vp-767 {
+    padding-right: 30px;
+  }
+
   &--hidden {
     @include vp-1199 {
       display: none;
@@ -113,6 +119,8 @@
   top: 408px;
   left: 50%;
   transform: translateX(-39.5%);
+  width: 364px;
+  min-height: 228px;
 
   background-color: $color-default-black;
 
@@ -120,38 +128,39 @@
     top: auto;
     bottom: 17px;
     transform: translateX(-50%);
+    width: 266px;
+    min-height: 167px;
   }
 
   @include vp-767 {
     position: static;
+    width: 100%;
     margin: 0 auto;
     transform: translateX(0);
   }
 }
 
-.about-company__iframe {
-  width: 364px;
-  height: 228px;
-
-  object-fit: contain;
-  border: none;
-
-  @include vp-1199 {
-    width: 266px;
-    height: 167px;
-  }
-
+.about-company__video-mobile {
   @include vp-767 {
-    width: 320px;
-    height: 167px;
+    padding-bottom: 56.25%;
+    overflow: hidden;
   }
+}
+
+.about-company__iframe {
+  position: absolute;
+  border: 0;
+  height: 100%;
+  left: 0;
+  top: 0;
+  width: 100%;
 }
 
 .about-company__video img {
   width: 364px;
   height: 228px;
 
-  object-fit: contain;
+  object-fit: cover;
 
   @include vp-1199 {
     width: 266px;
@@ -159,8 +168,8 @@
   }
 
   @include vp-767 {
-    width: 320px;
-    height: 167px;
+    width: 100%;
+    height: auto;
   }
 }
 
@@ -178,8 +187,16 @@
 }
 
 .about-company__image {
+  @include vp-1199 {
+    width: 100%;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
   @include vp-767 {
+    width: 100%;
     margin-bottom: 40px;
+    padding: 0;
   }
 }
 
@@ -187,15 +204,10 @@
   width: 660px;
   height: 401px;
 
-  object-fit: contain;
+  object-fit: cover;
 
   @include vp-1199 {
-    width: 678px;
-    height: 345px;
-  }
-
-  @include vp-767 {
-    width: 320px;
-    height: 313px;
+    width: 100%;
+    height: auto;
   }
 }

@@ -21,6 +21,7 @@ const setupVideo = () => {
     link.remove();
     button.remove();
     video.appendChild(iframe);
+    video.classList.add('about-company__video-mobile');
   });
 
   link.setAttribute('href', '#');

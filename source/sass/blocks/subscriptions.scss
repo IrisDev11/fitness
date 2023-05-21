@@ -12,6 +12,12 @@
     padding-top: 68px;
     padding-bottom: 50px;
   }
+
+  @include vp-767 {
+    margin-bottom: 85px;
+    padding-top: 63px;
+    padding-bottom: 30px;
+  }
 }
 
 .subscriptions__heading {
@@ -35,7 +41,8 @@
   }
 
   @include vp-767 {
-    left: 0;
+    left: -5px;
+    margin-bottom: 22px;
 
     font-size: 32px;
     line-height: 38px;
@@ -57,7 +64,6 @@
 .subscriptions__tabs-item {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
-  // grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
   column-gap: 3.3%;
   row-gap: 20px;
   padding: 0;
@@ -68,6 +74,10 @@
     display: flex;
     flex-direction: column;
     row-gap: 40px;
+  }
+
+  @include vp-767 {
+    row-gap: 31px;
   }
 }
 
@@ -83,6 +93,10 @@
     max-width: 332px;
     margin-bottom: 25px;
   }
+
+  @include vp-767 {
+    margin-bottom: 15px;
+  }
 }
 
 .subscriptions__control {
@@ -94,6 +108,14 @@
 
   background-color: transparent;
   border: none;
+
+  @include hover-focus {
+    opacity: 0.6;
+  }
+
+  @include active {
+    opacity: 0.3;
+  }
 
   @include vp-1199 {
     padding: 0 0 13px;
@@ -113,9 +135,9 @@
   bottom: -157px;
   right: 0;
 
-  // @include vp-1199 {
-  //   bottom: -250px;
-  // }
+  @include vp-1199 {
+    bottom: -82px;
+  }
 
   @include vp-767 {
     display: none;
@@ -129,7 +151,7 @@
   object-fit: cover;
 
   @include vp-1199 {
-    width: 289px;
-    height: 345px;
+    width: 345px;
+    height: 300px;
   }
 }

@@ -14,7 +14,7 @@
 
   &--intro {
     @include vp-767 {
-      padding: 0;
+      padding: 0 12px;
     }
   }
 
@@ -26,9 +26,21 @@
     }
   }
 
+  &--features {
+    @include vp-767 {
+      padding: 0;
+    }
+  }
+
   &--connection {
     @include vp-1199 {
       padding: 0;
+    }
+  }
+
+  &--footer {
+    @include vp-1199 {
+      padding-right: 39px;
     }
   }
 }

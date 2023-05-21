@@ -2,16 +2,22 @@
   display: grid;
   grid-template-rows: min-content min-content auto min-content;
   min-height: 448px;
-  padding: 58px 17px;
+  padding: 58px 17px 60px;
   background-color: $color-default-white;
   border: 7px solid transparent;
 
-  // transition: all $trans-default;
-
-  @include hover-focus {
-    // border: 7px solid transparent;
+  @include hover {
     border-image: $border-gradient;
     border-image-slice: 1;
+  }
+
+  @include vp-1199 {
+    padding-bottom: 60px;
+  }
+
+  @include vp-767 {
+    min-height: 384px;
+    padding: 46px 35px 48px;
   }
 }
 
@@ -26,6 +32,11 @@
   @include vp-1199 {
     margin-bottom: 10px;
   }
+
+  @include vp-767 {
+    font-size: 22px;
+    line-height: 24px;
+  }
 }
 
 .subscription__options {
@@ -38,10 +49,7 @@
 }
 
 .subscription__button {
-  position: relative;
-  top: -3px;
-  max-width: 206px;
-  min-width: 206px;
+  width: 66%;
   margin: 0 auto;
   padding-top: 23px;
   padding-bottom: 24px;
@@ -52,22 +60,33 @@
   letter-spacing: 0.05em;
   text-transform: uppercase;
 
-  outline: none;
-
   @include hover-focus {
     color: $color-default-white;
 
     background-image: $button-gradient;
-    border: none;
+    border-top: 2px solid transparent;
+    border-bottom: 2px solid transparent;
+    border-left: none;
+    border-right: none;
   }
 
   @include vp-1199 {
-    top: 0;
+    width: 52%;
+  }
+
+  @include vp-767 {
+    max-width: none;
+    width: 100%;
+    padding-top: 25px;
   }
 }
 
 .subscription__price-wrapper {
   position: relative;
+
+  @include vp-767 {
+    margin-bottom: 25px;
+  }
 }
 
 .subscription__shadow {
@@ -77,6 +96,11 @@
   font-size: 100px;
   line-height: 150px;
   color: $color-whisper;
+
+  @include vp-767 {
+    font-size: 80px;
+    line-height: 120px;
+  }
 }
 
 .subscription__price {
@@ -91,8 +115,24 @@
   font-size: 60px;
   line-height: 90px;
   color: $color-egyptian-blue;
+
+  @include vp-767 {
+    left: 51%;
+
+    font-size: 48px;
+    line-height: 72px;
+  }
 }
 
 .subscription__price svg {
+  width: 30px;
+  height: 42px;
   margin-left: 14px;
+
+  @include vp-767 {
+    width: 24px;
+    height: 33px;
+
+    margin-left: 12px;
+  }
 }
