@@ -3717,6 +3717,10 @@ button,
     padding: 0;
   }
 
+  .container--connection {
+    padding: 0;
+  }
+
   .header__wrapper {
     padding-top: 15px;
     padding-bottom: 78px;
