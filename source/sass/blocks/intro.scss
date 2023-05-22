@@ -33,11 +33,12 @@
 }
 
 .intro__heading-wrapper {
-  position: relative;
-  width: calc(100% - 112px);
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
 
   @include vp-767 {
-    width: calc(100% - 100px);
+    justify-content: flex-end;
     padding-right: 3px;
   }
 }
@@ -72,11 +73,10 @@
 }
 
 .intro__heading {
+  order: 2;
   margin: 0 0 48px;
   padding: 0;
 
-  font-family: $ff-alumni;
-  font-weight: 600;
   font-size: 92px;
   line-height: 110px;
   letter-spacing: 0.05em;
@@ -101,9 +101,9 @@
 }
 
 .intro__services-list {
-  position: absolute;
+  position: relative;
   top: 75px;
-  left: -112px;
+  order: 1;
   max-width: 112px;
   margin: 47px 0 0 0;
   padding: 0;
@@ -115,12 +115,12 @@
   text-align: right;
 
   @include vp-1199 {
-    top: 40px;
+    top: 42px;
   }
 
   @include vp-767 {
     top: 31px;
-    left: -98px;
+    left: 8px;
   }
 }
 

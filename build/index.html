@@ -40,7 +40,7 @@
           <div class="intro__text-content">
             <span class="intro__text">Омск</span>
             <div class="intro__heading-wrapper">
-              <h1 class="intro__heading">Фитнес<br>центр</h1>
+              <h1 class="title intro__heading">Фитнес<br>центр</h1>
               <ul class="intro__services-list">
                 <li class="intro__services-item">Тренажёрный&nbsp;зал</li>
                 <li class="intro__services-item">Групповые&nbsp;занятия</li>
@@ -66,7 +66,7 @@
       <div class="container container--about-company">
         <section class="about-company">
           <div class="about-company__text-content">
-            <h2 class="about-company__heading">Тренажерный зал</h2>
+            <h2 class="title about-company__heading">Тренажерный зал</h2>
             <p class="about-company__subtitle">Просторный зал площадью 900&nbsp;кв/м</p>
             <div class="about-company__text">
               <p>
@@ -98,7 +98,7 @@
             </picture>
           </div>
           <div class="about-company__video">
-            <a class="about-company__video-link" href="https://www.youtube.com/watch?v=9TZXsZItgdw">
+            <div class="about-company__video-image">
               <picture>
                 <source type="image/webp" media="(min-width: 1200px)"
                   srcset="img/video-preview-desktop.webp 1x, img/video-preview-desktop@2x.webp 2x">
@@ -113,15 +113,15 @@
                 <img src="img/video-preview-mobile.jpg" srcset="img/video-preview-mobile@2x.jpg 2x" width="320"
                   height="167" loading="lazy" alt="Тренажерный зал.">
               </picture>
-            </a>
+            </div>
             <button class="btn about-company__video-button" type="button" aria-label="Смотреть видео."></button>
           </div>
         </section>
       </div>
       <section class="subscriptions" id="subscriptions">
         <div class="container">
-          <h2 class="subscriptions__heading">Абонементы</h2>
-          <div class="subscriptions__tabs tabs" data-tabs="parent">
+          <h2 class="title subscriptions__heading">Абонементы</h2>
+          <div class="subscriptions__tabs tabs" data-tabs="parent" data-height="max">
             <div class="subscriptions__tabs-controls tabs__controls" data-tabs="controls">
               <button class="subscriptions__control tabs__control" type="button"
                 data-tabs="control">1&nbsp;месяц</button>
@@ -282,7 +282,7 @@
         <section class="promo">
           <div class="promo__content">
             <div class="promo__top-wrapper">
-              <h2 class="promo__heading">Super<br>games</h2>
+              <h2 class="title promo__heading">Super<br>games</h2>
               <dl class="promo__info">
                 <dt>Дата</dt>
                 <dd>
@@ -315,7 +315,7 @@
       </div>
       <section class="coaches" id="coaches">
         <div class="container">
-          <h2 class="coaches__heading">Тренеры</h2>
+          <h2 class="title coaches__heading">Тренеры</h2>
           <div class="coaches__wrapper">
             <div class="coaches__slider swiper">
               <div class="coaches__list swiper-wrapper">
@@ -554,7 +554,7 @@
       </section>
       <section class="features">
         <div class="container container--features">
-          <h2 class="features__heading">Наши преимущества</h2>
+          <h2 class="title features__heading">Наши преимущества</h2>
           <ul class="features__list">
             <li class="features__item">
               <h3 class="features__subtitle">Площадь</h3>
@@ -601,8 +601,8 @@
       </section>
       <section class="promotions" id="promotions">
         <div class="container">
-          <h2 class="promotions__heading">Акции</h2>
-          <div class="promotions__content-wrapper">
+          <h2 class="title promotions__heading">Акции</h2>
+          <div class="promotions__list">
             <div class="promotions__accent">
               <div class="promotions__content">
                 <div>
@@ -630,24 +630,22 @@
                 </picture>
               </div>
             </div>
-            <ul class="promotions__list">
-              <li class="promotions__item">
-                <h3 class="promotions__subtitle">Месяц бесплатно</h3>
-                <p class="promotions__description">Приведи друга, получи абонемент в&nbsp;подарок</p>
-                <a class="promotions__link" href="#">Подробнее</a>
-              </li>
-              <li class="promotions__item">
-                <h3 class="promotions__subtitle">Скидка 20%</h3>
-                <p class="promotions__description">Корпоративный фитнес с&nbsp;командой</p>
-                <a class="promotions__link" href="#">Подробнее</a>
-              </li>
-            </ul>
+            <div class="promotions__item">
+              <h3 class="promotions__subtitle">Месяц бесплатно</h3>
+              <p class="promotions__description">Приведи друга, получи абонемент в&nbsp;подарок</p>
+              <a class="promotions__link" href="#">Подробнее</a>
+            </div>
+            <div class="promotions__item">
+              <h3 class="promotions__subtitle">Скидка 20%</h3>
+              <p class="promotions__description">Корпоративный фитнес с&nbsp;командой</p>
+              <a class="promotions__link" href="#">Подробнее</a>
+            </div>
           </div>
         </div>
       </section>
       <section class="reviews">
         <div class="container">
-          <h2 class="reviews__heading">Отзывы</h2>
+          <h2 class="title reviews__heading">Отзывы</h2>
           <div class="reviews__wrapper">
             <div class="reviews__slider swiper">
               <div class="reviews__list swiper-wrapper">
@@ -735,7 +733,7 @@
         <div class="container container--connection">
           <div class="connection__wrapper">
             <section class="connection__feedback feedback">
-              <h2 class="feedback__heading">Бесплатное занятие</h2>
+              <h2 class="title feedback__heading">Бесплатное занятие</h2>
               <form class="feedback__form" action="https://echo.htmlacademy.ru/" method="post">
                 <div class="feedback__input-wrapper">
                   <div class="feedback__input feedback__input-name">
@@ -750,7 +748,7 @@
               </form>
             </section>
             <section class="connection__contacts contacts" id="contacts">
-              <h2 class="contacts__heading">Контакты</h2>
+              <h2 class="title contacts__heading">Контакты</h2>
               <div class="contacts__wrapper">
                 <div class="contacts__address">
                   <dl>

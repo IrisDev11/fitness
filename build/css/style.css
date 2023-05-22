@@ -1592,6 +1592,14 @@ button,
   overflow-x: hidden;
 }
 
+.title {
+  font-family: "Alumni Sans", "Arial", sans-serif;
+  font-weight: 600;
+  font-size: 54px;
+  line-height: 65px;
+  letter-spacing: 0.03em;
+}
+
 .btn {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -1697,8 +1705,13 @@ button,
 }
 
 .intro__heading-wrapper {
-  position: relative;
-  width: calc(100% - 112px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .intro__text {
@@ -1714,10 +1727,11 @@ button,
 }
 
 .intro__heading {
+  -webkit-box-ordinal-group: 3;
+  -ms-flex-order: 2;
+  order: 2;
   margin: 0 0 48px;
   padding: 0;
-  font-family: "Alumni Sans", "Arial", sans-serif;
-  font-weight: 600;
   font-size: 92px;
   line-height: 110px;
   letter-spacing: 0.05em;
@@ -1728,9 +1742,11 @@ button,
 }
 
 .intro__services-list {
-  position: absolute;
+  position: relative;
   top: 75px;
-  left: -112px;
+  -webkit-box-ordinal-group: 2;
+  -ms-flex-order: 1;
+  order: 1;
   max-width: 112px;
   margin: 47px 0 0 0;
   padding: 0;
@@ -1791,11 +1807,8 @@ button,
 .about-company__heading {
   margin: 0 0 7px;
   padding: 0;
-  font-family: "Alumni Sans", "Arial", sans-serif;
-  font-weight: 600;
   font-size: 48px;
   line-height: 58px;
-  letter-spacing: 0.03em;
 }
 
 .about-company__subtitle {
@@ -1848,7 +1861,7 @@ button,
 
 .about-company__video-button {
   position: absolute;
-  top: 23%;
+  top: 28%;
   left: 50%;
   width: 100px;
   height: 100px;
@@ -1881,11 +1894,6 @@ button,
   left: -2px;
   margin: 0 0 17px;
   padding: 0;
-  font-family: "Alumni Sans", "Arial", sans-serif;
-  font-weight: 600;
-  font-size: 54px;
-  line-height: 65px;
-  letter-spacing: 0.03em;
 }
 
 .subscriptions__tabs-item {
@@ -2067,11 +2075,8 @@ button,
 .promo__heading {
   margin: 20px 29px 0 0;
   padding: 0 0 0 15px;
-  font-family: "Alumni Sans", "Arial", sans-serif;
-  font-weight: 600;
   font-size: 82px;
   line-height: 79px;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
 }
 
@@ -2163,12 +2168,6 @@ button,
   left: 2px;
   margin: 0 0 48px;
   padding: 0;
-  font-family: "Alumni Sans", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 54px;
-  line-height: 65px;
-  letter-spacing: 0.03em;
 }
 
 .coaches__wrapper {
@@ -2344,16 +2343,10 @@ button,
   left: 5px;
   margin: 0 0 46px;
   padding: 0;
-  font-family: "Alumni Sans", "Arial", sans-serif;
-  font-weight: 600;
-  font-size: 54px;
-  line-height: 65px;
-  letter-spacing: 0.03em;
   text-align: center;
 }
 
 .features__list {
-  position: relative;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr -webkit-min-content 1fr;
@@ -2367,25 +2360,6 @@ button,
   margin: 0 auto;
   padding: 0;
   list-style: none;
-}
-
-.features__list::after {
-  content: "";
-  position: absolute;
-  top: 49%;
-  width: 340px;
-  height: 2px;
-  background-color: rgba(209, 10, 66, 0.2);
-}
-
-.features__list::before {
-  content: "";
-  position: absolute;
-  top: 49%;
-  right: 0;
-  width: 340px;
-  height: 2px;
-  background-color: rgba(209, 10, 66, 0.2);
 }
 
 .features__subtitle {
@@ -2427,6 +2401,7 @@ button,
 }
 
 .features__accent {
+  position: relative;
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2/3;
@@ -2434,6 +2409,26 @@ button,
   padding: 10px 42px 17px;
   text-align: center;
   color: #ffffff;
+}
+
+.features__accent::after {
+  content: "";
+  position: absolute;
+  top: 49%;
+  left: 342px;
+  width: 340px;
+  height: 2px;
+  background-color: rgba(209, 10, 66, 0.2);
+}
+
+.features__accent::before {
+  content: "";
+  position: absolute;
+  top: 49%;
+  right: 340px;
+  width: 340px;
+  height: 2px;
+  background-color: rgba(209, 10, 66, 0.2);
 }
 
 .features__accent-wrapper {
@@ -2520,43 +2515,20 @@ button,
 .promotions__heading {
   margin: 0 0 34px;
   padding: 0;
-  font-family: "Alumni Sans", "Arial", sans-serif;
-  font-weight: 600;
-  font-size: 54px;
-  line-height: 65px;
-  letter-spacing: 0.03em;
   text-align: center;
 }
 
-.promotions__content-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-column-gap: 40px;
-  -moz-column-gap: 40px;
-  column-gap: 40px;
-  row-gap: 40px;
-}
-
 .promotions__list {
-  -webkit-box-flex: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
   display: -ms-grid;
   display: grid;
-  grid-template-columns: repeat(auto-fit, 560px);
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: auto auto;
+  grid-template-rows: auto auto;
   -webkit-column-gap: 40px;
   -moz-column-gap: 40px;
   column-gap: 40px;
   row-gap: 40px;
-  margin: 0;
-  padding: 0;
-  list-style: none;
 }
 
 .promotions__item {
@@ -2575,7 +2547,9 @@ button,
 }
 
 .promotions__accent {
-  width: 48.2%;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1/3;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2701,11 +2675,6 @@ button,
   left: 5px;
   margin: 0 0 37px;
   padding: 0;
-  font-family: "Alumni Sans", "Arial", sans-serif;
-  font-weight: 600;
-  font-size: 54px;
-  line-height: 65px;
-  letter-spacing: 0.03em;
   text-align: center;
 }
 
@@ -2830,11 +2799,6 @@ button,
   left: -5px;
   margin: 0 0 37px;
   padding: 0;
-  font-family: "Alumni Sans", "Arial", sans-serif;
-  font-weight: 600;
-  font-size: 54px;
-  line-height: 65px;
-  letter-spacing: 0.03em;
 }
 
 .contacts__wrapper {
@@ -2872,7 +2836,7 @@ button,
   top: 8px;
   right: -62px;
   width: 1px;
-  height: 102px;
+  height: 77%;
   background-color: #74819c;
 }
 
@@ -2890,11 +2854,8 @@ button,
 .feedback__heading {
   margin: 0 0 12px;
   padding: 0;
-  font-family: "Alumni Sans", "Arial", sans-serif;
   font-weight: 800;
-  font-size: 54px;
   line-height: 84px;
-  letter-spacing: 0.03em;
 }
 
 .feedback__form {
@@ -3115,6 +3076,11 @@ button,
     padding-right: 39px;
   }
 
+  .title {
+    font-size: 42px;
+    line-height: 50px;
+  }
+
   .header {
     margin-bottom: 9px;
   }
@@ -3173,7 +3139,7 @@ button,
   }
 
   .intro__services-list {
-    top: 40px;
+    top: 42px;
   }
 
   .intro__btn {
@@ -3247,6 +3213,11 @@ button,
     height: 167px;
   }
 
+  .about-company__video-button {
+    width: 75px;
+    height: 75px;
+  }
+
   .about-company__image {
     width: 100%;
     padding-left: 5px;
@@ -3267,8 +3238,6 @@ button,
   .subscriptions__heading {
     left: -7px;
     margin-bottom: 20px;
-    font-size: 42px;
-    line-height: 50px;
   }
 
   .subscriptions__tabs {
@@ -3399,8 +3368,6 @@ button,
   .coaches__heading {
     left: -3px;
     margin-bottom: 31px;
-    font-size: 42px;
-    line-height: 50px;
     text-align: center;
   }
 
@@ -3447,16 +3414,6 @@ button,
   .features__heading {
     left: -11px;
     margin-bottom: 44px;
-    font-size: 42px;
-    line-height: 50px;
-  }
-
-  .features__list::after {
-    display: none;
-  }
-
-  .features__list::before {
-    display: none;
   }
 
   .features__list {
@@ -3482,6 +3439,14 @@ button,
 
   .features__text--accent {
     margin-top: 5px;
+  }
+
+  .features__accent::after {
+    display: none;
+  }
+
+  .features__accent::before {
+    display: none;
   }
 
   .features__accent {
@@ -3528,17 +3493,13 @@ button,
     position: relative;
     left: -5px;
     margin-bottom: 41px;
-    font-size: 42px;
-    line-height: 50px;
-  }
-
-  .promotions__content-wrapper {
-    row-gap: 30px;
   }
 
   .promotions__list {
-    -ms-grid-columns: (1fr)[2];
-    grid-template-columns: repeat(2, 1fr);
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(auto-fit, -webkit-min-content);
+    grid-template-rows: repeat(auto-fit, min-content);
     -webkit-column-gap: 30px;
     -moz-column-gap: 30px;
     column-gap: 30px;
@@ -3546,6 +3507,8 @@ button,
   }
 
   .promotions__accent {
+    grid-column: 1/-1;
+    grid-row: auto;
     width: 100%;
   }
 
@@ -3571,8 +3534,6 @@ button,
   .reviews__heading {
     left: -2px;
     margin-bottom: 40px;
-    font-size: 42px;
-    line-height: 50px;
   }
 
   .reviews__item {
@@ -3606,8 +3567,6 @@ button,
   .contacts__heading {
     left: 0;
     margin-bottom: 30px;
-    font-size: 42px;
-    line-height: 50px;
   }
 
   .contacts__wrapper dl {
@@ -3626,7 +3585,7 @@ button,
   }
 
   .contacts__address::before {
-    height: 129px;
+    height: 80%;
     right: -16px;
   }
 
@@ -3650,7 +3609,6 @@ button,
   .feedback__heading {
     margin-bottom: 28px;
     font-weight: 700;
-    font-size: 42px;
     line-height: 50px;
   }
 
@@ -3722,6 +3680,11 @@ button,
     padding: 0;
   }
 
+  .title {
+    font-size: 32px;
+    line-height: 38px;
+  }
+
   .header__wrapper {
     padding-top: 15px;
     padding-bottom: 78px;
@@ -3754,7 +3717,9 @@ button,
   }
 
   .intro__heading-wrapper {
-    width: calc(100% - 100px);
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
     padding-right: 3px;
   }
 
@@ -3773,7 +3738,7 @@ button,
 
   .intro__services-list {
     top: 31px;
-    left: -98px;
+    left: 8px;
   }
 
   .intro__btn {
@@ -3834,6 +3799,12 @@ button,
     height: auto;
   }
 
+  .about-company__video-button {
+    top: 27%;
+    width: 25%;
+    height: 45%;
+  }
+
   .about-company__image {
     width: 100%;
     margin-bottom: 40px;
@@ -3849,8 +3820,6 @@ button,
   .subscriptions__heading {
     left: -5px;
     margin-bottom: 22px;
-    font-size: 32px;
-    line-height: 38px;
   }
 
   .subscriptions__tabs {
@@ -3951,8 +3920,6 @@ button,
 
   .coaches__heading {
     margin-bottom: 43px;
-    font-size: 32px;
-    line-height: 38px;
   }
 
   .coaches__wrapper {
@@ -4000,8 +3967,6 @@ button,
     left: -8px;
     margin-bottom: 43px;
     padding: 0 15px;
-    font-size: 32px;
-    line-height: 38px;
   }
 
   .features__list {
@@ -4095,8 +4060,6 @@ button,
   .promotions__heading {
     left: -2px;
     margin-bottom: 43px;
-    font-size: 32px;
-    line-height: 38px;
   }
 
   .promotions__list {
@@ -4183,8 +4146,6 @@ button,
 
   .reviews__heading {
     margin-bottom: 43px;
-    font-size: 32px;
-    line-height: 38px;
   }
 
   .reviews__item {
@@ -4245,8 +4206,6 @@ button,
 
   .contacts__heading {
     margin-bottom: 35px;
-    font-size: 32px;
-    line-height: 38px;
   }
 
   .contacts__wrapper {
@@ -4279,7 +4238,6 @@ button,
     padding-left: 2px;
     padding-right: 2px;
     font-weight: 600;
-    font-size: 32px;
     line-height: 38px;
   }
 
