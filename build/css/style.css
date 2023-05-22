@@ -1635,7 +1635,7 @@ button,
 
 .header__wrapper {
   padding-top: 30px;
-  padding-bottom: 51px;
+  padding-bottom: 49px;
   background-color: #ed0233;
   background-image: conic-gradient(from 150.87deg at 16.03% 39.06%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
 }
@@ -1777,7 +1777,7 @@ button,
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  padding-top: 120px;
+  padding-top: 121px;
   padding-bottom: 120px;
 }
 
@@ -1868,16 +1868,16 @@ button,
 
 .subscriptions {
   position: relative;
-  margin-bottom: 127px;
+  margin-bottom: 120px;
   padding-top: 120px;
-  padding-bottom: 90px;
+  padding-bottom: 97px;
   text-align: center;
   background-color: #f8f9fc;
 }
 
 .subscriptions__heading {
   position: relative;
-  left: -3px;
+  left: -2px;
   margin: 0 0 17px;
   padding: 0;
   font-family: "Alumni Sans", "Arial", sans-serif;
@@ -1900,6 +1900,7 @@ button,
 }
 
 .subscriptions__tabs-controls {
+  position: relative;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   -webkit-box-pack: justify;
@@ -1907,12 +1908,20 @@ button,
   justify-content: space-between;
   max-width: 341px;
   margin: 0 auto 22px;
-  border-bottom: 2px solid rgba(120, 120, 120, 0.2);
+}
+
+.subscriptions__tabs-controls::before {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  width: 100%;
+  height: 2px;
+  background-color: rgba(120, 120, 120, 0.2);
 }
 
 .subscriptions__control {
   margin: 0;
-  padding: 0 0 10px;
+  padding: 0 0 12px;
   font-size: 20px;
   line-height: 30px;
   background-color: transparent;
@@ -1929,7 +1938,7 @@ button,
 
 .subscriptions__bg-decor {
   position: absolute;
-  bottom: -157px;
+  bottom: -150px;
   right: 0;
 }
 
@@ -2144,7 +2153,7 @@ button,
 }
 
 .coaches {
-  margin-bottom: 145px;
+  margin-bottom: 141px;
   padding-top: 105px;
 }
 
@@ -2294,20 +2303,22 @@ button,
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
+  display: block;
   width: 18px;
   height: 34px;
   z-index: 1;
+  padding: 0;
   background-color: transparent;
   border: none;
   cursor: pointer;
 }
 
 .coaches__toggle--prev {
-  left: -60px;
+  left: -57px;
 }
 
 .coaches__toggle--next {
-  right: -50px;
+  right: -57px;
 }
 
 .coaches__toggle svg {
@@ -2322,15 +2333,15 @@ button,
 }
 
 .features {
-  padding-top: 93px;
-  padding-bottom: 124px;
+  padding-top: 96px;
+  padding-bottom: 122px;
   background-color: #f8f9fc;
 }
 
 .features__heading {
   position: relative;
   left: 5px;
-  margin: 0 0 44px;
+  margin: 0 0 46px;
   padding: 0;
   font-family: "Alumni Sans", "Arial", sans-serif;
   font-weight: 600;
@@ -2391,7 +2402,7 @@ button,
   padding: 0;
   font-weight: 300;
   font-size: 16px;
-  line-height: 22px;
+  line-height: 24px;
 }
 
 .features__text--accent {
@@ -2479,7 +2490,7 @@ button,
 
 .features__num-accent {
   display: block;
-  margin-bottom: 5px;
+  margin-bottom: 3px;
   font-weight: 700;
   font-size: 74px;
   line-height: 74px;
@@ -2516,13 +2527,28 @@ button,
   text-align: center;
 }
 
+.promotions__content-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-column-gap: 40px;
+  -moz-column-gap: 40px;
+  column-gap: 40px;
+  row-gap: 40px;
+}
+
 .promotions__list {
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr;
-  grid-template-columns: 1fr 1fr;
-  -ms-grid-rows: auto auto;
-  grid-template-rows: auto auto;
+  grid-template-columns: repeat(auto-fit, 560px);
   -webkit-column-gap: 40px;
   -moz-column-gap: 40px;
   column-gap: 40px;
@@ -2548,10 +2574,7 @@ button,
 }
 
 .promotions__accent {
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 1;
-  grid-column: 1/2;
-  grid-row: 1/-1;
+  width: 48.2%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2570,7 +2593,7 @@ button,
   -ms-flex-pack: justify;
   justify-content: space-between;
   width: 50%;
-  padding: 39px 45px 45px;
+  padding: 39px 45px 43px;
   background-color: #ed0233;
 }
 
@@ -2595,7 +2618,7 @@ button,
   width: -moz-fit-content;
   width: fit-content;
   margin-top: 10px;
-  padding-bottom: 2px;
+  padding-bottom: 1px;
   font-weight: 700;
   font-size: 12px;
   line-height: 14px;
@@ -2662,7 +2685,7 @@ button,
 }
 
 .reviews {
-  padding-top: 50px;
+  padding-top: 52px;
   padding-bottom: 120px;
 }
 
@@ -2740,20 +2763,22 @@ button,
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
-  width: 16px;
-  height: 32px;
+  display: block;
+  width: 18px;
+  height: 34px;
   z-index: 1;
+  padding: 0;
   background-color: transparent;
   border: none;
   cursor: pointer;
 }
 
 .reviews__toggle--prev {
-  left: -60px;
+  left: -57px;
 }
 
 .reviews__toggle--next {
-  right: -50px;
+  right: -57px;
 }
 
 .reviews__toggle svg {
@@ -2796,7 +2821,7 @@ button,
 }
 
 .contacts {
-  padding: 56px 0 48px 124px;
+  padding: 56px 0 45px 124px;
 }
 
 .contacts__heading {
@@ -2824,14 +2849,14 @@ button,
 }
 
 .contacts__wrapper dt {
-  margin-bottom: 5px;
+  margin-bottom: 3px;
   font-weight: 700;
   font-size: 16px;
   line-height: 24px;
 }
 
 .contacts__wrapper dd {
-  margin: 0 0 15px;
+  margin: 0 0 18px;
 }
 
 .contacts__address {
@@ -2855,14 +2880,14 @@ button,
 }
 
 .feedback {
-  padding-top: 56px;
+  padding-top: 55px;
   padding-bottom: 48px;
   padding-right: 169px;
   color: #ffffff;
 }
 
 .feedback__heading {
-  margin: 0 0 10px;
+  margin: 0 0 12px;
   padding: 0;
   font-family: "Alumni Sans", "Arial", sans-serif;
   font-weight: 800;
@@ -3174,7 +3199,7 @@ button,
     -ms-flex-align: center;
     align-items: center;
     padding-top: 100px;
-    padding-bottom: 100px;
+    padding-bottom: 67px;
   }
 
   .about-company__text-content {
@@ -3208,7 +3233,7 @@ button,
 
   .about-company__video {
     top: auto;
-    bottom: 17px;
+    bottom: -16px;
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
     transform: translateX(-50%);
@@ -3233,12 +3258,13 @@ button,
   }
 
   .subscriptions {
-    padding-top: 68px;
-    padding-bottom: 50px;
+    margin-bottom: 100px;
+    padding-top: 101px;
+    padding-bottom: 77px;
   }
 
   .subscriptions__heading {
-    left: -6px;
+    left: -7px;
     margin-bottom: 20px;
     font-size: 42px;
     line-height: 50px;
@@ -3262,7 +3288,7 @@ button,
 
   .subscriptions__tabs-controls {
     max-width: 332px;
-    margin-bottom: 25px;
+    margin-bottom: 28px;
   }
 
   .subscriptions__control {
@@ -3272,7 +3298,7 @@ button,
   }
 
   .subscriptions__bg-decor {
-    bottom: -82px;
+    bottom: -53px;
   }
 
   .subscriptions__bg-decor img {
@@ -3281,6 +3307,7 @@ button,
   }
 
   .subscription {
+    padding-top: 57px;
     padding-bottom: 60px;
   }
 
@@ -3289,7 +3316,7 @@ button,
   }
 
   .subscription__button {
-    width: 52%;
+    width: 53%;
   }
 
   .promo__content {
@@ -3297,7 +3324,7 @@ button,
     -ms-grid-rows: min-content 1fr min-content;
     grid-template-rows: -webkit-min-content 1fr -webkit-min-content;
     grid-template-rows: min-content 1fr min-content;
-    padding: 33px 45px 51px 43px;
+    padding: 33px 44px 10px 44px;
   }
 
   .promo__top-wrapper {
@@ -3307,12 +3334,15 @@ button,
   }
 
   .promo__heading {
-    padding-left: 10px;
+    margin-top: 18px;
+    margin-right: 31px;
+    padding-left: 7px;
     font-size: 48px;
     line-height: 46px;
   }
 
   .promo__info {
+    margin-top: 14px;
     padding-left: 0;
   }
 
@@ -3352,6 +3382,8 @@ button,
   }
 
   .promo__button {
+    position: relative;
+    bottom: 40px;
     padding: 14px 14px 12px;
     font-size: 10px;
     line-height: 12px;
@@ -3359,11 +3391,12 @@ button,
   }
 
   .coaches {
-    padding-top: 100px;
+    margin-bottom: 100px;
+    padding-top: 101px;
   }
 
   .coaches__heading {
-    left: -2px;
+    left: -3px;
     margin-bottom: 31px;
     font-size: 42px;
     line-height: 50px;
@@ -3398,21 +3431,21 @@ button,
   }
 
   .coaches__toggle--prev {
-    left: -4px;
+    left: 0;
   }
 
   .coaches__toggle--next {
-    right: 3px;
+    right: 0;
   }
 
   .features {
-    padding-top: 47px;
-    padding-bottom: 60px;
+    padding-top: 92px;
+    padding-bottom: 85px;
   }
 
   .features__heading {
-    left: -10px;
-    margin-bottom: 42px;
+    left: -11px;
+    margin-bottom: 44px;
     font-size: 42px;
     line-height: 50px;
   }
@@ -3430,7 +3463,7 @@ button,
     grid-template-columns: 1fr 1fr;
     -ms-grid-rows: (auto)[3];
     grid-template-rows: repeat(3, auto);
-    row-gap: 40px;
+    row-gap: 36px;
     -webkit-column-gap: 30px;
     -moz-column-gap: 30px;
     column-gap: 30px;
@@ -3439,7 +3472,11 @@ button,
   .features__subtitle {
     top: 0;
     font-size: 20px;
-    line-height: 27px;
+    line-height: 24px;
+  }
+
+  .features__text {
+    line-height: 22px;
   }
 
   .features__text--accent {
@@ -3457,8 +3494,8 @@ button,
   .features__accent-wrapper {
     width: 65%;
     height: 239px;
-    margin: 0 auto;
-    padding: 30px 45px 42px;
+    margin: 0 auto 7px;
+    padding: 33px 45px 42px;
   }
 
   .features__num-block {
@@ -3473,6 +3510,7 @@ button,
   .features__num-accent {
     position: relative;
     left: -3px;
+    margin-bottom: 5px;
   }
 
   .features__sub-num-accent {
@@ -3482,34 +3520,38 @@ button,
   }
 
   .promotions {
-    padding-top: 119px;
+    padding-top: 93px;
   }
 
   .promotions__heading {
     position: relative;
     left: -5px;
-    margin-bottom: 40px;
+    margin-bottom: 41px;
     font-size: 42px;
     line-height: 50px;
   }
 
-  .promotions__list {
-    -webkit-column-gap: 30px;
-    -moz-column-gap: 30px;
-    column-gap: 30px;
+  .promotions__content-wrapper {
     row-gap: 30px;
   }
 
+  .promotions__list {
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+    -webkit-column-gap: 30px;
+    -moz-column-gap: 30px;
+    column-gap: 30px;
+    row-gap: 28px;
+  }
+
   .promotions__accent {
-    grid-column: 1/-1;
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 1;
-    grid-row: 1/2;
+    width: 100%;
   }
 
   .promotions__content {
     width: 41%;
     padding-right: 35px;
+    padding-bottom: 47px;
   }
 
   .promotions__image {
@@ -3812,11 +3854,11 @@ button,
   }
 
   .subscriptions__tabs-item {
-    row-gap: 31px;
+    row-gap: 33px;
   }
 
   .subscriptions__tabs-controls {
-    margin-bottom: 15px;
+    margin-bottom: 18px;
   }
 
   .subscriptions__control {
@@ -3830,7 +3872,7 @@ button,
 
   .subscription {
     min-height: 384px;
-    padding: 46px 35px 48px;
+    padding: 44px 35px 48px;
   }
 
   .subscription__title {
@@ -3877,7 +3919,7 @@ button,
 
   .promo__content {
     width: 100%;
-    padding-top: 31px;
+    padding-top: 33px;
     padding-bottom: 49px;
   }
 
@@ -3892,6 +3934,7 @@ button,
   }
 
   .promo__button {
+    position: static;
     padding-top: 13px;
     padding-bottom: 13px;
   }
@@ -3945,11 +3988,12 @@ button,
 
   .features {
     padding-top: 64px;
+    padding-bottom: 62px;
   }
 
   .features__heading {
     left: -8px;
-    margin-bottom: 45px;
+    margin-bottom: 43px;
     padding: 0 15px;
     font-size: 32px;
     line-height: 38px;
@@ -3970,7 +4014,7 @@ button,
     -webkit-box-ordinal-group: 3;
     -ms-flex-order: 2;
     order: 2;
-    margin-bottom: 3px;
+    margin-bottom: 6px;
     text-align: center;
   }
 
@@ -4005,7 +4049,7 @@ button,
   }
 
   .features__accent {
-    padding: 10px 0 7px;
+    padding: 7px 0 0;
   }
 
   .features__accent-wrapper {
@@ -4030,7 +4074,7 @@ button,
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    margin-bottom: 2px;
+    margin-bottom: 4px;
   }
 
   .features__num-accent {
@@ -4039,7 +4083,7 @@ button,
   }
 
   .promotions {
-    padding-top: 68px;
+    padding-top: 63px;
     padding-bottom: 20px;
   }
 
@@ -4058,6 +4102,7 @@ button,
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+    row-gap: 30px;
   }
 
   .promotions__item {
@@ -4088,6 +4133,7 @@ button,
     align-items: center;
     padding-left: 40px;
     padding-right: 40px;
+    padding-bottom: 44px;
   }
 
   .promotions__subtitle {
@@ -4120,8 +4166,8 @@ button,
   }
 
   .reviews {
-    padding-top: 43px;
-    padding-bottom: 72px;
+    padding-top: 44px;
+    padding-bottom: 70px;
   }
 
   .reviews__wrapper {
@@ -4159,12 +4205,17 @@ button,
     text-align: center;
   }
 
+  .reviews__toggle {
+    width: 10px;
+    height: 19px;
+  }
+
   .reviews__toggle--prev {
-    left: -5px;
+    left: 0;
   }
 
   .reviews__toggle--next {
-    right: -2px;
+    right: 0;
   }
 
   .reviews__toggle svg {
@@ -4215,7 +4266,7 @@ button,
   }
 
   .feedback {
-    padding: 62px 13px 67px;
+    padding: 64px 13px 69px;
   }
 
   .feedback__heading {

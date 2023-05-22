@@ -1,23 +1,24 @@
 .features {
-  padding-top: 93px;
-  padding-bottom: 124px;
+  padding-top: 96px;
+  padding-bottom: 122px;
 
   background-color: $color-grey;
 
   @include vp-1199 {
-    padding-top: 47px;
-    padding-bottom: 60px;
+    padding-top: 92px;
+    padding-bottom: 85px;
   }
 
   @include vp-767 {
     padding-top: 64px;
+    padding-bottom: 62px;
   }
 }
 
 .features__heading {
   position: relative;
   left: 5px;
-  margin: 0 0 44px;
+  margin: 0 0 46px;
   padding: 0;
 
   font-family: $ff-alumni;
@@ -28,8 +29,8 @@
   text-align: center;
 
   @include vp-1199 {
-    left: -10px;
-    margin-bottom: 42px;
+    left: -11px;
+    margin-bottom: 44px;
 
     font-size: 42px;
     line-height: 50px;
@@ -37,7 +38,7 @@
 
   @include vp-767 {
     left: -8px;
-    margin-bottom: 45px;
+    margin-bottom: 43px;
     padding: 0 15px;
 
     font-size: 32px;
@@ -87,7 +88,7 @@
   @include vp-1199 {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(3, auto);
-    row-gap: 40px;
+    row-gap: 36px;
     column-gap: 30px;
   }
 
@@ -112,12 +113,12 @@
     top: 0;
 
     font-size: 20px;
-    line-height: 27px;
+    line-height: 24px;
   }
 
   @include vp-767 {
     order: 2;
-    margin-bottom: 3px;
+    margin-bottom: 6px;
     text-align: center;
   }
 }
@@ -128,7 +129,11 @@
 
   font-weight: 300;
   font-size: 16px;
-  line-height: 22px;
+  line-height: 24px;
+
+  @include vp-1199 {
+    line-height: 22px;
+  }
 
   @include vp-767 {
     order: 3;
@@ -183,7 +188,7 @@
   }
 
   @include vp-767 {
-    padding: 10px 0 7px;
+    padding: 7px 0 0;
   }
 }
 
@@ -219,8 +224,8 @@
   @include vp-1199 {
     width: 65%;
     height: 239px;
-    margin: 0 auto;
-    padding: 30px 45px 42px;
+    margin: 0 auto 7px;
+    padding: 33px 45px 42px;
   }
 
   @include vp-767 {
@@ -246,7 +251,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 2px;
+    margin-bottom: 4px;
   }
 }
 
@@ -267,7 +272,7 @@
 
 .features__num-accent {
   display: block;
-  margin-bottom: 5px;
+  margin-bottom: 3px;
 
   font-weight: 700;
   font-size: 74px;
@@ -276,6 +281,7 @@
   @include vp-1199 {
     position: relative;
     left: -3px;
+    margin-bottom: 5px;
   }
 
   @include vp-767 {

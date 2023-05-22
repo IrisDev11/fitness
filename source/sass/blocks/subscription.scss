@@ -12,12 +12,13 @@
   }
 
   @include vp-1199 {
+    padding-top: 57px;
     padding-bottom: 60px;
   }
 
   @include vp-767 {
     min-height: 384px;
-    padding: 46px 35px 48px;
+    padding: 44px 35px 48px;
   }
 }
 
@@ -71,7 +72,7 @@
   }
 
   @include vp-1199 {
-    width: 52%;
+    width: 53%;
   }
 
   @include vp-767 {

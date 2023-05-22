@@ -1,5 +1,5 @@
 .contacts {
-  padding: 56px 0 48px 124px;
+  padding: 56px 0 45px 124px;
 
   @include vp-1199 {
     padding: 62px 133px 44px 133px;
@@ -59,7 +59,7 @@
 }
 
 .contacts__wrapper dt {
-  margin-bottom: 5px;
+  margin-bottom: 3px;
 
   font-weight: 700;
   font-size: 16px;
@@ -74,7 +74,7 @@
 }
 
 .contacts__wrapper dd {
-  margin: 0 0 15px;
+  margin: 0 0 18px;
 
   @include vp-1199 {
     margin-bottom: 18px;
