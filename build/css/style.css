@@ -3794,9 +3794,9 @@ button,
   }
 
   .subscriptions {
-    margin-bottom: 85px;
+    margin-bottom: 72px;
     padding-top: 63px;
-    padding-bottom: 30px;
+    padding-bottom: 43px;
   }
 
   .subscriptions__heading {
@@ -3897,7 +3897,7 @@ button,
   }
 
   .coaches {
-    margin-bottom: 86px;
+    margin-bottom: 70px;
     padding-top: 63px;
   }
 
@@ -3941,6 +3941,10 @@ button,
   .coaches__toggle svg {
     width: 10px;
     height: 19px;
+  }
+
+  .features {
+    padding-top: 64px;
   }
 
   .features__heading {
@@ -4086,9 +4090,17 @@ button,
     padding-right: 40px;
   }
 
+  .promotions__subtitle {
+    margin-bottom: 12px;
+  }
+
   .promotions__description {
-    margin-bottom: 18px;
+    margin-bottom: 15px;
     text-align: center;
+  }
+
+  .promotions__link {
+    padding-bottom: 1px;
   }
 
   .promotions__accent h3 {
@@ -4203,7 +4215,7 @@ button,
   }
 
   .feedback {
-    padding: 62px 13px 68px;
+    padding: 62px 13px 67px;
   }
 
   .feedback__heading {
@@ -4220,14 +4232,14 @@ button,
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    margin-bottom: 13px;
+    margin-bottom: 10px;
     padding-left: 2px;
     padding-right: 2px;
   }
 
   .feedback__input {
     width: 100%;
-    margin-bottom: 25px;
+    margin-bottom: 27px;
   }
 
   .feedback__input input {

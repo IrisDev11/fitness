@@ -12,7 +12,7 @@
   }
 
   @include vp-767 {
-    padding: 62px 13px 68px;
+    padding: 62px 13px 67px;
   }
 }
 
@@ -63,7 +63,7 @@
 
   @include vp-767 {
     flex-direction: column;
-    margin-bottom: 13px;
+    margin-bottom: 10px;
     padding-left: 2px;
     padding-right: 2px;
   }
@@ -76,7 +76,7 @@
 
   @include vp-767 {
     width: 100%;
-    margin-bottom: 25px;
+    margin-bottom: 27px;
   }
 }
 
