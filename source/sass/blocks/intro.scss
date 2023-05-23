@@ -12,7 +12,7 @@
 .intro__text-content {
   display: grid;
   grid-template-columns: 112px auto;
-  grid-template-rows: repeat(3, min-content);
+  grid-template-rows: auto auto auto 1fr;
   column-gap: 17px;
   margin-right: 64px;
   padding-top: 81px;
@@ -34,6 +34,7 @@
 
 .intro__text {
   grid-column: 2 / 3;
+  grid-row: 1 / 2;
   justify-self: flex-end;
   display: block;
   margin-right: 51px;
@@ -67,6 +68,7 @@
 
 .intro__heading {
   grid-column: 2 / 3;
+  grid-row: 2 / 3;
   margin: 0 0 48px;
   padding: 0;
 
@@ -96,14 +98,13 @@
 }
 
 .intro__services-list {
-  grid-row: 1 / -1;
+  grid-row: 2 / -1;
   grid-column: 1 / 2;
   position: relative;
-  top: 148px;
 
   max-width: 112px;
   margin: 47px 0 0 0;
-  padding: 0;
+  padding: 75px 0 0;
 
   list-style: none;
 
@@ -112,11 +113,12 @@
   text-align: right;
 
   @include vp-1199 {
-    top: 90px;
+    padding-top: 42px;
   }
 
   @include vp-767 {
-    top: 79px;
+    padding: 0;
+    top: 32px;
     left: 3px;
   }
 }
@@ -124,6 +126,7 @@
 .intro__btn {
   justify-self: flex-end;
   grid-column: 2 / 3;
+  grid-row: 3 / 4;
   width: 96%;
   padding: 20px 55px;
 
@@ -143,6 +146,7 @@
   }
 
   @include vp-1199 {
+    width: 93%;
     padding: 20px 30px;
   }
 
