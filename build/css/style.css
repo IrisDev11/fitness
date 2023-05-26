@@ -3086,6 +3086,10 @@ button,
     padding: 0 45px;
   }
 
+  .container--about-company {
+    padding: 0 40px 115px;
+  }
+
   .container--connection {
     padding: 0;
   }
@@ -3692,10 +3696,6 @@ button,
 
   .container--intro {
     padding: 0 12px;
-  }
-
-  .container--about-company {
-    padding: 0 40px 115px;
   }
 
   .container--about-company {
