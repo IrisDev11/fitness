@@ -3398,7 +3398,7 @@ button,
   }
 
   .coaches {
-    margin-bottom: 67px;
+    margin-bottom: 98px;
     padding-top: 101px;
   }
 
@@ -3435,12 +3435,6 @@ button,
   .coaches__info span {
     position: relative;
     left: -4px;
-  }
-
-  .coaches__toggle {
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
   }
 
   .features {
@@ -3987,9 +3981,6 @@ button,
   .coaches__toggle {
     width: 10px;
     height: 19px;
-    -webkit-transform: translateY(0);
-    -ms-transform: translateY(0);
-    transform: translateY(0);
   }
 
   .coaches__toggle--prev {
