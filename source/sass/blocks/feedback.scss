@@ -42,11 +42,12 @@
 
 .feedback__form {
   display: flex;
+  flex-shrink: 0;
   flex-direction: column;
-  max-width: 414px;
+  width: 410px;
 
   @include vp-1199 {
-    max-width: none;
+    width: 100%;
   }
 }
 

@@ -95,24 +95,26 @@
                 loading="lazy" alt="Тренажерный зал.">
             </picture>
           </div>
-          <div class="about-company__video">
-            <div class="about-company__video-image">
-              <picture>
-                <source type="image/webp" media="(min-width: 1200px)"
-                  srcset="img/video-preview-desktop.webp 1x, img/video-preview-desktop@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 768px)"
-                  srcset="img/video-preview-tablet.webp 1x, img/video-preview-tablet@2x.webp 2x">
-                <source srcset="img/video-preview-mobile.webp 1x, img/video-preview-mobile@2x.webp 2x"
-                  type="image/webp">
-                <source media="(min-width: 1200px)"
-                  srcset="img/video-preview-desktop.jpg 1x, img/video-preview-desktop@2x.jpg 2x">
-                <source media="(min-width: 768px)"
-                  srcset="img/video-preview-tablet.jpg 1x, img/video-preview-tablet@2x.jpg 2x">
-                <img src="img/video-preview-mobile.jpg" srcset="img/video-preview-mobile@2x.jpg 2x" width="320"
-                  height="167" loading="lazy" alt="Тренажерный зал.">
-              </picture>
+          <div class="about-company__video-wrapper">
+            <div class="about-company__video">
+              <div class="about-company__video-image">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1200px)"
+                    srcset="img/video-preview-desktop.webp 1x, img/video-preview-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/video-preview-tablet.webp 1x, img/video-preview-tablet@2x.webp 2x">
+                  <source srcset="img/video-preview-mobile.webp 1x, img/video-preview-mobile@2x.webp 2x"
+                    type="image/webp">
+                  <source media="(min-width: 1200px)"
+                    srcset="img/video-preview-desktop.jpg 1x, img/video-preview-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)"
+                    srcset="img/video-preview-tablet.jpg 1x, img/video-preview-tablet@2x.jpg 2x">
+                  <img src="img/video-preview-mobile.jpg" srcset="img/video-preview-mobile@2x.jpg 2x" width="320"
+                    height="167" loading="lazy" alt="Тренажерный зал.">
+                </picture>
+              </div>
+              <button class="btn about-company__video-button" type="button" aria-label="Смотреть видео."></button>
             </div>
-            <button class="btn about-company__video-button" type="button" aria-label="Смотреть видео."></button>
           </div>
         </section>
       </div>
@@ -312,242 +314,240 @@
         </section>
       </div>
       <section class="coaches" id="coaches">
-        <div class="container">
-          <h2 class="title coaches__heading">Тренеры</h2>
-          <div class="coaches__wrapper">
-            <div class="coaches__slider swiper">
-              <div class="coaches__list swiper-wrapper">
-                <div class="coaches__item swiper-slide">
-                  <figure class="coaches__image">
-                    <picture>
-                      <source type="image/webp" media="(min-width: 1200px)"
-                        srcset="img/trainer-desktop-1.webp 1x, img/trainer-desktop-1@2x.webp 2x">
-                      <source type="image/webp" media="(min-width: 768px)"
-                        srcset="img/trainer-tablet-1.webp 1x, img/trainer-tablet-1@2x.webp 2x">
-                      <source type="image/webp" srcset="img/trainer-mobile-1.webp 1x, img/trainer-mobile-1@2x.webp 2x">
-                      <source media="(min-width: 1200px)"
-                        srcset="img/trainer-desktop-1.jpg 1x, img/trainer-desktop-1@2x.jpg 2x">
-                      <source media="(min-width: 768px)"
-                        srcset="img/trainer-tablet-1.jpg 1x, img/trainer-tablet-1@2x.jpg 2x">
-                      <img src="img/trainer-mobile-1.jpg" srcset="trainer-mobile-1@2x.jpg 2x" width="226" height="274"
-                        loading="lazy" alt="Тренер Анна Павлова.">
-                    </picture>
-                    <figcaption>Анна Павлова</figcaption>
-                  </figure>
-                  <div class="coaches__info">
-                    <h3>Анна Павлова</h3>
-                    <span>CrossFit</span>
-                    <ul>
-                      <li>Certified Level&nbsp;3 Trainer</li>
-                      <li>Победитель чемпионата России по&nbsp;CrossFit</li>
-                      <li>Опыт&nbsp;&mdash; 6&nbsp;лет</li>
-                    </ul>
-                  </div>
+        <h2 class="title coaches__heading">Тренеры</h2>
+        <div class="coaches__wrapper">
+          <button class="coaches__toggle coaches__toggle--prev swiper-button-prev" type="button">
+            <span class="visually-hidden">Предыдущий слайд</span>
+            <svg width="18" height="34">
+              <use xlink:href="img/sprite.svg#arrow-slider-left"></use>
+            </svg>
+          </button>
+          <div class="coaches__slider swiper">
+            <div class="coaches__list swiper-wrapper">
+              <div class="coaches__item swiper-slide">
+                <figure class="coaches__image">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1200px)"
+                      srcset="img/trainer-desktop-1.webp 1x, img/trainer-desktop-1@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)"
+                      srcset="img/trainer-tablet-1.webp 1x, img/trainer-tablet-1@2x.webp 2x">
+                    <source type="image/webp" srcset="img/trainer-mobile-1.webp 1x, img/trainer-mobile-1@2x.webp 2x">
+                    <source media="(min-width: 1200px)"
+                      srcset="img/trainer-desktop-1.jpg 1x, img/trainer-desktop-1@2x.jpg 2x">
+                    <source media="(min-width: 768px)"
+                      srcset="img/trainer-tablet-1.jpg 1x, img/trainer-tablet-1@2x.jpg 2x">
+                    <img src="img/trainer-mobile-1.jpg" srcset="trainer-mobile-1@2x.jpg 2x" width="226" height="274"
+                      loading="lazy" alt="Тренер Анна Павлова.">
+                  </picture>
+                  <figcaption>Анна Павлова</figcaption>
+                </figure>
+                <div class="coaches__info">
+                  <h3>Анна Павлова</h3>
+                  <span>CrossFit</span>
+                  <ul>
+                    <li>Certified Level&nbsp;3 Trainer</li>
+                    <li>Победитель чемпионата России по&nbsp;CrossFit</li>
+                    <li>Опыт&nbsp;&mdash; 6&nbsp;лет</li>
+                  </ul>
                 </div>
-                <div class="coaches__item swiper-slide">
-                  <figure class="coaches__image">
-                    <picture>
-                      <source type="image/webp" media="(min-width: 1200px)"
-                        srcset="img/trainer-desktop-2.webp 1x, img/trainer-desktop-2@2x.webp 2x">
-                      <source type="image/webp" media="(min-width: 768px)"
-                        srcset="img/trainer-tablet-2.webp 1x, img/trainer-tablet-2@2x.webp 2x">
-                      <source type="image/webp" srcset="img/trainer-mobile-2.webp 1x, img/trainer-mobile-2@2x.webp 2x">
-                      <source media="(min-width: 1200px)"
-                        srcset="img/trainer-desktop-2.jpg 1x, img/trainer-desktop-2@2x.jpg 2x">
-                      <source media="(min-width: 768px)"
-                        srcset="img/trainer-tablet-2.jpg 1x, img/trainer-tablet-2@2x.jpg 2x">
-                      <img src="img/trainer-mobile-2.jpg" srcset="trainer-mobile-2@2x.jpg 2x" width="226" height="274"
-                        loading="lazy" alt="Тренер Алексей Лавров.">
-                    </picture>
-                    <figcaption>Алексей Лавров</figcaption>
-                  </figure>
-                  <div class="coaches__info">
-                    <h3>Алексей Лавров</h3>
-                    <span>CrossFit</span>
-                    <ul>
-                      <li>Certified Level&nbsp;3 Trainer</li>
-                      <li>Победитель чемпионата России по&nbsp;CrossFit</li>
-                      <li>Опыт&nbsp;&mdash; 6&nbsp;лет</li>
-                    </ul>
-                  </div>
+              </div>
+              <div class="coaches__item swiper-slide">
+                <figure class="coaches__image">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1200px)"
+                      srcset="img/trainer-desktop-2.webp 1x, img/trainer-desktop-2@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)"
+                      srcset="img/trainer-tablet-2.webp 1x, img/trainer-tablet-2@2x.webp 2x">
+                    <source type="image/webp" srcset="img/trainer-mobile-2.webp 1x, img/trainer-mobile-2@2x.webp 2x">
+                    <source media="(min-width: 1200px)"
+                      srcset="img/trainer-desktop-2.jpg 1x, img/trainer-desktop-2@2x.jpg 2x">
+                    <source media="(min-width: 768px)"
+                      srcset="img/trainer-tablet-2.jpg 1x, img/trainer-tablet-2@2x.jpg 2x">
+                    <img src="img/trainer-mobile-2.jpg" srcset="trainer-mobile-2@2x.jpg 2x" width="226" height="274"
+                      loading="lazy" alt="Тренер Алексей Лавров.">
+                  </picture>
+                  <figcaption>Алексей Лавров</figcaption>
+                </figure>
+                <div class="coaches__info">
+                  <h3>Алексей Лавров</h3>
+                  <span>CrossFit</span>
+                  <ul>
+                    <li>Certified Level&nbsp;3 Trainer</li>
+                    <li>Победитель чемпионата России по&nbsp;CrossFit</li>
+                    <li>Опыт&nbsp;&mdash; 6&nbsp;лет</li>
+                  </ul>
                 </div>
-                <div class="coaches__item swiper-slide">
-                  <figure class="coaches__image">
-                    <picture>
-                      <source type="image/webp" media="(min-width: 1200px)"
-                        srcset="img/trainer-desktop-3.webp 1x, img/trainer-desktop-3@2x.webp 2x">
-                      <source type="image/webp" media="(min-width: 768px)"
-                        srcset="img/trainer-tablet-3.webp 1x, img/trainer-tablet-3@2x.webp 2x">
-                      <source type="image/webp" srcset="img/trainer-mobile-3.webp 1x, img/trainer-mobile-3@2x.webp 2x">
-                      <source media="(min-width: 1200px)"
-                        srcset="img/trainer-desktop-3.jpg 1x, img/trainer-desktop-3@2x.jpg 2x">
-                      <source media="(min-width: 768px)"
-                        srcset="img/trainer-tablet-3.jpg 1x, img/trainer-tablet-3@2x.jpg 2x">
-                      <img src="img/trainer-mobile-3.jpg" srcset="trainer-mobile-3@2x.jpg 2x" width="226" height="274"
-                        loading="lazy" alt="Тренер Александр Пашков.">
-                    </picture>
-                    <figcaption>Александр&nbsp;Пашков</figcaption>
-                  </figure>
-                  <div class="coaches__info">
-                    <h3>Александр Пашков</h3>
-                    <span>CrossFit</span>
-                    <ul>
-                      <li>Certified Level&nbsp;3 Trainer</li>
-                      <li>Победитель чемпионата России по&nbsp;CrossFit</li>
-                      <li>Опыт&nbsp;&mdash; 6&nbsp;лет</li>
-                    </ul>
-                  </div>
+              </div>
+              <div class="coaches__item swiper-slide">
+                <figure class="coaches__image">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1200px)"
+                      srcset="img/trainer-desktop-3.webp 1x, img/trainer-desktop-3@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)"
+                      srcset="img/trainer-tablet-3.webp 1x, img/trainer-tablet-3@2x.webp 2x">
+                    <source type="image/webp" srcset="img/trainer-mobile-3.webp 1x, img/trainer-mobile-3@2x.webp 2x">
+                    <source media="(min-width: 1200px)"
+                      srcset="img/trainer-desktop-3.jpg 1x, img/trainer-desktop-3@2x.jpg 2x">
+                    <source media="(min-width: 768px)"
+                      srcset="img/trainer-tablet-3.jpg 1x, img/trainer-tablet-3@2x.jpg 2x">
+                    <img src="img/trainer-mobile-3.jpg" srcset="trainer-mobile-3@2x.jpg 2x" width="226" height="274"
+                      loading="lazy" alt="Тренер Александр Пашков.">
+                  </picture>
+                  <figcaption>Александр&nbsp;Пашков</figcaption>
+                </figure>
+                <div class="coaches__info">
+                  <h3>Александр Пашков</h3>
+                  <span>CrossFit</span>
+                  <ul>
+                    <li>Certified Level&nbsp;3 Trainer</li>
+                    <li>Победитель чемпионата России по&nbsp;CrossFit</li>
+                    <li>Опыт&nbsp;&mdash; 6&nbsp;лет</li>
+                  </ul>
                 </div>
-                <div class="coaches__item swiper-slide">
-                  <figure class="coaches__image">
-                    <picture>
-                      <source type="image/webp" media="(min-width: 1200px)"
-                        srcset="img/trainer-desktop-4.webp 1x, img/trainer-desktop-4@2x.webp 2x">
-                      <source type="image/webp" media="(min-width: 768px)"
-                        srcset="img/trainer-tablet-4.webp 1x, img/trainer-tablet-4@2x.webp 2x">
-                      <source type="image/webp" srcset="img/trainer-mobile-4.webp 1x, img/trainer-mobile-4@2x.webp 2x">
-                      <source media="(min-width: 1200px)"
-                        srcset="img/trainer-desktop-4.jpg 1x, img/trainer-desktop-4@2x.jpg 2x">
-                      <source media="(min-width: 768px)"
-                        srcset="img/trainer-tablet-4.jpg 1x, img/trainer-tablet-4@2x.jpg 2x">
-                      <img src="img/trainer-mobile-4.jpg" srcset="trainer-mobile-4@2x.jpg 2x" width="226" height="274"
-                        loading="lazy" alt="Тренер Мария Кетова.">
-                    </picture>
-                    <figcaption>Мария Кетова</figcaption>
-                  </figure>
-                  <div class="coaches__info">
-                    <h3>Мария Кетова</h3>
-                    <span>CrossFit</span>
-                    <ul>
-                      <li>Certified Level&nbsp;3 Trainer</li>
-                      <li>Победитель чемпионата России по&nbsp;CrossFit</li>
-                      <li>Опыт&nbsp;&mdash; 6&nbsp;лет</li>
-                    </ul>
-                  </div>
+              </div>
+              <div class="coaches__item swiper-slide">
+                <figure class="coaches__image">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1200px)"
+                      srcset="img/trainer-desktop-4.webp 1x, img/trainer-desktop-4@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)"
+                      srcset="img/trainer-tablet-4.webp 1x, img/trainer-tablet-4@2x.webp 2x">
+                    <source type="image/webp" srcset="img/trainer-mobile-4.webp 1x, img/trainer-mobile-4@2x.webp 2x">
+                    <source media="(min-width: 1200px)"
+                      srcset="img/trainer-desktop-4.jpg 1x, img/trainer-desktop-4@2x.jpg 2x">
+                    <source media="(min-width: 768px)"
+                      srcset="img/trainer-tablet-4.jpg 1x, img/trainer-tablet-4@2x.jpg 2x">
+                    <img src="img/trainer-mobile-4.jpg" srcset="trainer-mobile-4@2x.jpg 2x" width="226" height="274"
+                      loading="lazy" alt="Тренер Мария Кетова.">
+                  </picture>
+                  <figcaption>Мария Кетова</figcaption>
+                </figure>
+                <div class="coaches__info">
+                  <h3>Мария Кетова</h3>
+                  <span>CrossFit</span>
+                  <ul>
+                    <li>Certified Level&nbsp;3 Trainer</li>
+                    <li>Победитель чемпионата России по&nbsp;CrossFit</li>
+                    <li>Опыт&nbsp;&mdash; 6&nbsp;лет</li>
+                  </ul>
                 </div>
-                <div class="coaches__item swiper-slide">
-                  <figure class="coaches__image">
-                    <picture>
-                      <source type="image/webp" media="(min-width: 1200px)"
-                        srcset="img/trainer-desktop-1.webp 1x, img/trainer-desktop-1@2x.webp 2x">
-                      <source type="image/webp" media="(min-width: 768px)"
-                        srcset="img/trainer-tablet-1.webp 1x, img/trainer-tablet-1@2x.webp 2x">
-                      <source type="image/webp" srcset="img/trainer-mobile-1.webp 1x, img/trainer-mobile-1@2x.webp 2x">
-                      <source media="(min-width: 1200px)"
-                        srcset="img/trainer-desktop-1.jpg 1x, img/trainer-desktop-1@2x.jpg 2x">
-                      <source media="(min-width: 768px)"
-                        srcset="img/trainer-tablet-1.jpg 1x, img/trainer-tablet-1@2x.jpg 2x">
-                      <img src="img/trainer-mobile-1.jpg" srcset="trainer-mobile-1@2x.jpg 2x" width="226" height="274"
-                        loading="lazy" alt="Тренер Анна Павлова.">
-                    </picture>
-                    <figcaption>Анна Павлова</figcaption>
-                  </figure>
-                  <div class="coaches__info">
-                    <h3>Анна Павлова</h3>
-                    <span>CrossFit</span>
-                    <ul>
-                      <li>Certified Level&nbsp;3 Trainer</li>
-                      <li>Победитель чемпионата России по&nbsp;CrossFit</li>
-                      <li>Опыт&nbsp;&mdash; 6&nbsp;лет</li>
-                    </ul>
-                  </div>
+              </div>
+              <div class="coaches__item swiper-slide">
+                <figure class="coaches__image">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1200px)"
+                      srcset="img/trainer-desktop-1.webp 1x, img/trainer-desktop-1@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)"
+                      srcset="img/trainer-tablet-1.webp 1x, img/trainer-tablet-1@2x.webp 2x">
+                    <source type="image/webp" srcset="img/trainer-mobile-1.webp 1x, img/trainer-mobile-1@2x.webp 2x">
+                    <source media="(min-width: 1200px)"
+                      srcset="img/trainer-desktop-1.jpg 1x, img/trainer-desktop-1@2x.jpg 2x">
+                    <source media="(min-width: 768px)"
+                      srcset="img/trainer-tablet-1.jpg 1x, img/trainer-tablet-1@2x.jpg 2x">
+                    <img src="img/trainer-mobile-1.jpg" srcset="trainer-mobile-1@2x.jpg 2x" width="226" height="274"
+                      loading="lazy" alt="Тренер Анна Павлова.">
+                  </picture>
+                  <figcaption>Анна Павлова</figcaption>
+                </figure>
+                <div class="coaches__info">
+                  <h3>Анна Павлова</h3>
+                  <span>CrossFit</span>
+                  <ul>
+                    <li>Certified Level&nbsp;3 Trainer</li>
+                    <li>Победитель чемпионата России по&nbsp;CrossFit</li>
+                    <li>Опыт&nbsp;&mdash; 6&nbsp;лет</li>
+                  </ul>
                 </div>
-                <div class="coaches__item swiper-slide">
-                  <figure class="coaches__image">
-                    <picture>
-                      <source type="image/webp" media="(min-width: 1200px)"
-                        srcset="img/trainer-desktop-2.webp 1x, img/trainer-desktop-2@2x.webp 2x">
-                      <source type="image/webp" media="(min-width: 768px)"
-                        srcset="img/trainer-tablet-2.webp 1x, img/trainer-tablet-2@2x.webp 2x">
-                      <source type="image/webp" srcset="img/trainer-mobile-2.webp 1x, img/trainer-mobile-2@2x.webp 2x">
-                      <source media="(min-width: 1200px)"
-                        srcset="img/trainer-desktop-2.jpg 1x, img/trainer-desktop-2@2x.jpg 2x">
-                      <source media="(min-width: 768px)"
-                        srcset="img/trainer-tablet-2.jpg 1x, img/trainer-tablet-2@2x.jpg 2x">
-                      <img src="img/trainer-mobile-2.jpg" srcset="trainer-mobile-2@2x.jpg 2x" width="226" height="274"
-                        loading="lazy" alt="Тренер Алексей Лавров.">
-                    </picture>
-                    <figcaption>Алексей Лавров</figcaption>
-                  </figure>
-                  <div class="coaches__info">
-                    <h3>Алексей Лавров</h3>
-                    <span>CrossFit</span>
-                    <ul>
-                      <li>Certified Level&nbsp;3 Trainer</li>
-                      <li>Победитель чемпионата России по&nbsp;CrossFit</li>
-                      <li>Опыт&nbsp;&mdash; 6&nbsp;лет</li>
-                    </ul>
-                  </div>
+              </div>
+              <div class="coaches__item swiper-slide">
+                <figure class="coaches__image">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1200px)"
+                      srcset="img/trainer-desktop-2.webp 1x, img/trainer-desktop-2@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)"
+                      srcset="img/trainer-tablet-2.webp 1x, img/trainer-tablet-2@2x.webp 2x">
+                    <source type="image/webp" srcset="img/trainer-mobile-2.webp 1x, img/trainer-mobile-2@2x.webp 2x">
+                    <source media="(min-width: 1200px)"
+                      srcset="img/trainer-desktop-2.jpg 1x, img/trainer-desktop-2@2x.jpg 2x">
+                    <source media="(min-width: 768px)"
+                      srcset="img/trainer-tablet-2.jpg 1x, img/trainer-tablet-2@2x.jpg 2x">
+                    <img src="img/trainer-mobile-2.jpg" srcset="trainer-mobile-2@2x.jpg 2x" width="226" height="274"
+                      loading="lazy" alt="Тренер Алексей Лавров.">
+                  </picture>
+                  <figcaption>Алексей Лавров</figcaption>
+                </figure>
+                <div class="coaches__info">
+                  <h3>Алексей Лавров</h3>
+                  <span>CrossFit</span>
+                  <ul>
+                    <li>Certified Level&nbsp;3 Trainer</li>
+                    <li>Победитель чемпионата России по&nbsp;CrossFit</li>
+                    <li>Опыт&nbsp;&mdash; 6&nbsp;лет</li>
+                  </ul>
                 </div>
-                <div class="coaches__item swiper-slide">
-                  <figure class="coaches__image">
-                    <picture>
-                      <source type="image/webp" media="(min-width: 1200px)"
-                        srcset="img/trainer-desktop-3.webp 1x, img/trainer-desktop-3@2x.webp 2x">
-                      <source type="image/webp" media="(min-width: 768px)"
-                        srcset="img/trainer-tablet-3.webp 1x, img/trainer-tablet-3@2x.webp 2x">
-                      <source type="image/webp" srcset="img/trainer-mobile-3.webp 1x, img/trainer-mobile-3@2x.webp 2x">
-                      <source media="(min-width: 1200px)"
-                        srcset="img/trainer-desktop-3.jpg 1x, img/trainer-desktop-3@2x.jpg 2x">
-                      <source media="(min-width: 768px)"
-                        srcset="img/trainer-tablet-3.jpg 1x, img/trainer-tablet-3@2x.jpg 2x">
-                      <img src="img/trainer-mobile-3.jpg" srcset="trainer-mobile-3@2x.jpg 2x" width="226" height="274"
-                        loading="lazy" alt="Тренер Александр Пашков.">
-                    </picture>
-                    <figcaption>Александр&nbsp;Пашков</figcaption>
-                  </figure>
-                  <div class="coaches__info">
-                    <h3>Александр Пашков</h3>
-                    <span>CrossFit</span>
-                    <ul>
-                      <li>Certified Level&nbsp;3 Trainer</li>
-                      <li>Победитель чемпионата России по&nbsp;CrossFit</li>
-                      <li>Опыт&nbsp;&mdash; 6&nbsp;лет</li>
-                    </ul>
-                  </div>
+              </div>
+              <div class="coaches__item swiper-slide">
+                <figure class="coaches__image">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1200px)"
+                      srcset="img/trainer-desktop-3.webp 1x, img/trainer-desktop-3@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)"
+                      srcset="img/trainer-tablet-3.webp 1x, img/trainer-tablet-3@2x.webp 2x">
+                    <source type="image/webp" srcset="img/trainer-mobile-3.webp 1x, img/trainer-mobile-3@2x.webp 2x">
+                    <source media="(min-width: 1200px)"
+                      srcset="img/trainer-desktop-3.jpg 1x, img/trainer-desktop-3@2x.jpg 2x">
+                    <source media="(min-width: 768px)"
+                      srcset="img/trainer-tablet-3.jpg 1x, img/trainer-tablet-3@2x.jpg 2x">
+                    <img src="img/trainer-mobile-3.jpg" srcset="trainer-mobile-3@2x.jpg 2x" width="226" height="274"
+                      loading="lazy" alt="Тренер Александр Пашков.">
+                  </picture>
+                  <figcaption>Александр&nbsp;Пашков</figcaption>
+                </figure>
+                <div class="coaches__info">
+                  <h3>Александр Пашков</h3>
+                  <span>CrossFit</span>
+                  <ul>
+                    <li>Certified Level&nbsp;3 Trainer</li>
+                    <li>Победитель чемпионата России по&nbsp;CrossFit</li>
+                    <li>Опыт&nbsp;&mdash; 6&nbsp;лет</li>
+                  </ul>
                 </div>
-                <div class="coaches__item swiper-slide">
-                  <figure class="coaches__image">
-                    <picture>
-                      <source type="image/webp" media="(min-width: 1200px)"
-                        srcset="img/trainer-desktop-4.webp 1x, img/trainer-desktop-4@2x.webp 2x">
-                      <source type="image/webp" media="(min-width: 768px)"
-                        srcset="img/trainer-tablet-4.webp 1x, img/trainer-tablet-4@2x.webp 2x">
-                      <source type="image/webp" srcset="img/trainer-mobile-4.webp 1x, img/trainer-mobile-4@2x.webp 2x">
-                      <source media="(min-width: 1200px)"
-                        srcset="img/trainer-desktop-4.jpg 1x, img/trainer-desktop-4@2x.jpg 2x">
-                      <source media="(min-width: 768px)"
-                        srcset="img/trainer-tablet-4.jpg 1x, img/trainer-tablet-4@2x.jpg 2x">
-                      <img src="img/trainer-mobile-4.jpg" srcset="trainer-mobile-4@2x.jpg 2x" width="226" height="274"
-                        loading="lazy" alt="Тренер Мария Кетова.">
-                    </picture>
-                    <figcaption>Мария Кетова</figcaption>
-                  </figure>
-                  <div class="coaches__info">
-                    <h3>Мария Кетова</h3>
-                    <span>CrossFit</span>
-                    <ul>
-                      <li>Certified Level&nbsp;3 Trainer</li>
-                      <li>Победитель чемпионата России по&nbsp;CrossFit</li>
-                      <li>Опыт&nbsp;&mdash; 6&nbsp;лет</li>
-                    </ul>
-                  </div>
+              </div>
+              <div class="coaches__item swiper-slide">
+                <figure class="coaches__image">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1200px)"
+                      srcset="img/trainer-desktop-4.webp 1x, img/trainer-desktop-4@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)"
+                      srcset="img/trainer-tablet-4.webp 1x, img/trainer-tablet-4@2x.webp 2x">
+                    <source type="image/webp" srcset="img/trainer-mobile-4.webp 1x, img/trainer-mobile-4@2x.webp 2x">
+                    <source media="(min-width: 1200px)"
+                      srcset="img/trainer-desktop-4.jpg 1x, img/trainer-desktop-4@2x.jpg 2x">
+                    <source media="(min-width: 768px)"
+                      srcset="img/trainer-tablet-4.jpg 1x, img/trainer-tablet-4@2x.jpg 2x">
+                    <img src="img/trainer-mobile-4.jpg" srcset="trainer-mobile-4@2x.jpg 2x" width="226" height="274"
+                      loading="lazy" alt="Тренер Мария Кетова.">
+                  </picture>
+                  <figcaption>Мария Кетова</figcaption>
+                </figure>
+                <div class="coaches__info">
+                  <h3>Мария Кетова</h3>
+                  <span>CrossFit</span>
+                  <ul>
+                    <li>Certified Level&nbsp;3 Trainer</li>
+                    <li>Победитель чемпионата России по&nbsp;CrossFit</li>
+                    <li>Опыт&nbsp;&mdash; 6&nbsp;лет</li>
+                  </ul>
                 </div>
               </div>
             </div>
-            <button class="coaches__toggle coaches__toggle--prev swiper-button-prev" type="button">
-              <span class="visually-hidden">Предыдущий слайд</span>
-              <svg width="18" height="34">
-                <use xlink:href="img/sprite.svg#arrow-slider-left"></use>
-              </svg>
-            </button>
-            <button class="coaches__toggle coaches__toggle--next swiper-button-next" type="button">
-              <span class="visually-hidden">Следующий слайд</span>
-              <svg width="18" height="34">
-                <use xlink:href="img/sprite.svg#arrow-slider-right"></use>
-              </svg>
-            </button>
           </div>
+          <button class="coaches__toggle coaches__toggle--next swiper-button-next" type="button">
+            <span class="visually-hidden">Следующий слайд</span>
+            <svg width="18" height="34">
+              <use xlink:href="img/sprite.svg#arrow-slider-right"></use>
+            </svg>
+          </button>
         </div>
       </section>
       <section class="features">
