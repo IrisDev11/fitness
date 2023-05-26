@@ -4375,10 +4375,6 @@ button,
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
   }
-
-  .tabs__element {
-    padding: 15px;
-  }
 }
 
 @media (hover: hover) {
