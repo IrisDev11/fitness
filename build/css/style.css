@@ -3086,10 +3086,6 @@ button,
     padding: 0 45px;
   }
 
-  .container--about-company {
-    padding: 0 40px 115px;
-  }
-
   .container--connection {
     padding: 0;
   }
@@ -3398,7 +3394,7 @@ button,
   }
 
   .coaches {
-    margin-bottom: 100px;
+    margin-bottom: 67px;
     padding-top: 101px;
   }
 
@@ -3437,9 +3433,15 @@ button,
     left: -4px;
   }
 
+  .coaches__toggle {
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+
   .features {
     padding-top: 92px;
-    padding-bottom: 85px;
+    padding-bottom: 87px;
   }
 
   .features__heading {
@@ -3683,13 +3685,6 @@ button,
   }
 }
 
-@media screen and (max-width: 1023px) {
-  .tabs__control {
-    margin: 0 10px;
-    padding: 15px;
-  }
-}
-
 @media (max-width: 767px) {
   .container {
     padding: 0 15px;
@@ -3697,6 +3692,10 @@ button,
 
   .container--intro {
     padding: 0 12px;
+  }
+
+  .container--about-company {
+    padding: 0 40px 115px;
   }
 
   .container--about-company {
@@ -3988,6 +3987,9 @@ button,
   .coaches__toggle {
     width: 10px;
     height: 19px;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
   }
 
   .coaches__toggle--prev {
@@ -4381,11 +4383,6 @@ button,
   .tabs__controls {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-  }
-
-  .tabs__control {
-    margin: 10px 2% 0;
-    padding: 10px;
   }
 
   .tabs__element {

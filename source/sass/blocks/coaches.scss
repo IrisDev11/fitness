@@ -3,7 +3,7 @@
   padding-top: 105px;
 
   @include vp-1199 {
-    margin-bottom: 100px;
+    margin-bottom: 67px;
     padding-top: 101px;
   }
 
@@ -247,9 +247,14 @@
     margin-left: 38px;
   }
 
+  @include vp-1199 {
+    transform: translateY(-50%);
+  }
+
   @include vp-767 {
     width: 10px;
     height: 19px;
+    transform: translateY(0);
 
     &--prev {
       margin-right: 20px;
